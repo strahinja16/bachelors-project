@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e666c553-5e6e-488b-8b0b-d315a166d393" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-340708698">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Dockerfile" value="2" />
+          <entry key="babelrc" value="3" />
+          <entry key="development" value="2" />
+          <entry key="env" value="1" />
+          <entry key="eslintrc" value="3" />
+          <entry key="example" value="1" />
+          <entry key="gitignore" value="3" />
+          <entry key="html" value="1" />
+          <entry key="js" value="15" />
+          <entry key="json" value="5" />
+          <entry key="jsx" value="7" />
+          <entry key="md" value="1" />
+          <entry key="postcssrc" value="3" />
+          <entry key="production" value="3" />
+          <entry key="scss" value="4" />
+          <entry key="test" value="3" />
+          <entry key="yml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Dockerfile" value="2" />
+          <entry key="HTML" value="1" />
+          <entry key="JSON" value="11" />
+          <entry key="JSX Harmony" value="7" />
+          <entry key="JavaScript" value="15" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="SCSS" value="4" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Dockerfile" value="2" />
+          <entry key="html" value="20" />
+          <entry key="js" value="24" />
+          <entry key="json" value="64" />
+          <entry key="jsx" value="62" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Dockerfile" value="2" />
+          <entry key="HTML" value="20" />
+          <entry key="JSON" value="64" />
+          <entry key="JSX Harmony" value="62" />
+          <entry key="JavaScript" value="24" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="ESLintLanguageService" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/react-webpack-boilerplate" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/bachelors-node/package.json" />
+        <option value="$PROJECT_DIR$/bachelors-react/src/api/index.js" />
+        <option value="$PROJECT_DIR$/bachelors-react/src/api/auth.js" />
+        <option value="$PROJECT_DIR$/bachelors-react/src/components/elements/index.js" />
+        <option value="$PROJECT_DIR$/bachelors-react/src/consts/actions.js" />
+        <option value="$PROJECT_DIR$/bachelors-react/src/pages/Dashboard/index.jsx" />
+        <option value="$PROJECT_DIR$/bachelors-react/src/reducers/index.js" />
+        <option value="$PROJECT_DIR$/bachelors-react/src/index.html" />
+        <option value="$PROJECT_DIR$/bachelors-react/package.json" />
+        <option value="$PROJECT_DIR$/bachelors-react/Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/bachelors-node/node_modules" />
+    <handled-path value="$PROJECT_DIR$/bachelors-react/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/@types/geojson/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/@types/node/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/acorn-jsx/node_modules/acorn/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/acorn-jsx/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/acorn/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/agent-base/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ajv-keywords/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ajv/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ansi-align/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ansi-escapes/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/anymatch/node_modules/normalize-path/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/anymatch/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/aproba/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/are-we-there-yet/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/argparse/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/arr-diff/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/arr-flatten/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/arr-union/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/array-union/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/array-uniq/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/array-unique/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/arrify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/assign-symbols/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ast-types/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/async-each/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/async/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/asynckit/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/atob/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/babel-code-frame/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/babel-code-frame/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/babel-code-frame/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/babel-code-frame/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/babel-code-frame/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/babel-code-frame/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/babel-runtime/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/base/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/base/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/base/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/base/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/base/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/bcrypt/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/binary-extensions/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/bluebird/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/body-parser/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/boolify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/boxen/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/braces/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/braces/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/buffer-equal-constant-time/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/buffer-from/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/buffer-writer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/builtin-modules/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cache-base/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/caller-path/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/callsites/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/camelcase-keys/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/capture-stack-trace/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/chardet/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/chokidar/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/chownr/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ci-info/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/circular-json/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/class-utils/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/class-utils/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cli-boxes/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cli-color/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cli-color/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cli-cursor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cli-width/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cliui/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cliui/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cliui/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cliui/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cliui/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cls-bluebird/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/co/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/code-point-at/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/collection-visit/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/color-convert/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/color-name/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/color-string/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/color/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/colornames/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/colors/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/colorspace/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/combined-stream/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/commander/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/common-tags/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/component-emitter/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/concat-map/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/concat-stream/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/config-chain/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/configstore/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/console-control-strings/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/contains-path/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/copy-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/core-js/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cors/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/create-error-class/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/cross-spawn/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/crypto-random-string/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/d/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/data-uri-to-buffer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/decamelize/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/decode-uri-component/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/deep-extend/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/deep-is/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/define-properties/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/define-property/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/define-property/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/define-property/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/degenerator/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/del/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/delayed-stream/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/delegates/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/detect-libc/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/diagnostics/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/dlv/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/doctrine/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/dot-prop/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/dotenv/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/dottie/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/duplexer3/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ecdsa-sig-formatter/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/editorconfig/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/editorconfig/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/enabled/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/env-variable/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/error-ex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/es-abstract/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/es-to-primitive/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/es5-ext/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/es6-iterator/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/es6-promise/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/es6-promisify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/es6-symbol/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/es6-weak-map/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/escape-string-regexp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/escodegen/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint-config-airbnb-base/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint-import-resolver-alias/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint-import-resolver-node/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint-module-utils/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint-plugin-import/memo-parser/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint-plugin-import/node_modules/doctrine/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint-plugin-import/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint-plugin-import/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint-plugin-jest/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint-restricted-globals/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint-scope/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint-visitor-keys/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/eslint/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/espree/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/esprima/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/esquery/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/esrecurse/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/estraverse/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/esutils/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/event-emitter/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/execa/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/expand-brackets/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/expand-brackets/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/expand-brackets/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/express/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/express/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/express/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/express/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/express/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/express/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/express/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/extend-shallow/node_modules/is-extendable/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/extend/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/external-editor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/extglob/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/extglob/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/extglob/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/extglob/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/extglob/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/extglob/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/faker/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fast-deep-equal/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fast-json-stable-stringify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fast-levenshtein/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fast-safe-stringify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fecha/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/figures/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/file-entry-cache/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/file-uri-to-path/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fill-range/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fill-range/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/finalhandler/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/find-up/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/flat-cache/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/for-in/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/form-data/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fragment-cache/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fs-extra/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fs-minipass/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fs.realpath/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/aproba/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/are-we-there-yet/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/chownr/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/code-point-at/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/concat-map/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/console-control-strings/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/deep-extend/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/delegates/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/detect-libc/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/fs-minipass/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/fs.realpath/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/gauge/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/has-unicode/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/ignore-walk/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/inflight/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/ini/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/minipass/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/minizlib/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/needle/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/node-pre-gyp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/npm-bundled/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/npm-packlist/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/npmlog/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/number-is-nan/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/object-assign/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/os-homedir/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/os-tmpdir/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/osenv/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/path-is-absolute/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/rc/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/rc/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/rimraf/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/sax/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/set-blocking/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/signal-exit/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/strip-json-comments/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/tar/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/wide-align/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/wrappy/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/fsevents/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ftp/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ftp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/function-bind/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/functional-red-black-tree/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/gauge/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/gauge/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/gauge/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/gauge/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/gauge/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/generic-pool/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/get-caller-file/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/get-stdin/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/get-stream/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/get-uri/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/get-uri/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/get-uri/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/get-uri/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/get-uri/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/get-value/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/glob-parent/node_modules/is-glob/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/glob-parent/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/global-dirs/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/globals/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/globby/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/globby/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/got/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/has-ansi/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/has-ansi/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/has-flag/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/has-symbols/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/has-unicode/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/has-value/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/has-values/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/has-values/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/has/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/hoek/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/hosted-git-info/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/http-proxy-agent/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/http-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/http-status-codes/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/https-proxy-agent/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/https-proxy-agent/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/https-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ignore-by-default/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ignore-walk/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ignore/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/import-lazy/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/imurmurhash/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/indent-string/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/inflection/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/inflight/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ini/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/inquirer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/invert-kv/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ip/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-arrayish/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-binary-path/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-bluebird/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-buffer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-builtin-module/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-callable/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-ci/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-data-descriptor/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-date-object/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-descriptor/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-extendable/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-extglob/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-glob/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-installed-globally/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-npm/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-number/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-number/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-obj/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-path-cwd/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-path-in-cwd/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-path-inside/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-plain-object/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-promise/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-redirect/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-resolvable/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-retry-allowed/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-stream/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-symbol/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/is-windows/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/isemail/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/isexe/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/isobject/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/joi-extension-semver/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/joi/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/js-beautify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/js-tokens/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/js-yaml/node_modules/esprima/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/js-yaml/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/json-schema-traverse/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/json-stable-stringify-without-jsonify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/jsonfile/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/jsonwebtoken/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/jsonwebtoken/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/jwa/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/jws/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/kuler/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/latest-version/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lcid/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/levn/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/load-json-file/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/load-json-file/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/locate-path/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lodash.includes/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lodash.isboolean/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lodash.isinteger/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lodash.isnumber/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lodash.isplainobject/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lodash.isstring/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lodash.memoize/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lodash.merge/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lodash.once/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lodash.unescape/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lodash/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/logform/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/logform/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/loglevel-colored-level-prefix/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/loglevel-colored-level-prefix/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/loglevel-colored-level-prefix/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/loglevel-colored-level-prefix/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/loglevel-colored-level-prefix/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/loglevel-colored-level-prefix/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/loglevel/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lowercase-keys/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/lru-queue/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/mailgun-js/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/mailgun-js/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/make-dir/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/make-plural/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/map-cache/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/map-obj/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/map-visit/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/mem/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/memoizee/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/messageformat-parser/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/messageformat/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/messageformat/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/messageformat/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/micromatch/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/mimic-fn/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/minipass/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/minipass/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/minizlib/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/mixin-deep/node_modules/is-extendable/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/mixin-deep/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/mkdirp/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/module-alias/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/moment-timezone/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/moment/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/mute-stream/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/nan/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/nan/tools/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/nanomatch/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/natural-compare/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/needle/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/needle/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/needle/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/netmask/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/next-tick/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/node-pre-gyp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/nodemailer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/nodemon/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/nodemon/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/nodemon/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/normalize-package-data/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/normalize-path/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/npm-bundled/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/npm-packlist/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/npm-run-path/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/npmlog/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/number-is-nan/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/object-assign/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/object-copy/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/object-copy/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/object-copy/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/object-keys/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/object-visit/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/object.assign/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/object.entries/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/object.pick/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/one-time/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/onetime/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/optionator/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/os-homedir/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/os-locale/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/os-tmpdir/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/osenv/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/p-finally/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/p-limit/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/p-locate/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/p-map/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/p-try/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pac-proxy-agent/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pac-proxy-agent/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pac-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pac-resolver/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/package-json/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/packet-reader/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/parse-json/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pascalcase/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/path-dirname/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/path-exists/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/path-is-absolute/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/path-is-inside/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/path-key/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/path-parse/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/path-proxy/node_modules/inflection/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/path-proxy/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/path-type/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/path-type/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pg-connection-string/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pg-hstore/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pg-int8/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pg-pool/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pg-types/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pg/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pg/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pgpass/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pinkie-promise/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pinkie/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pkg-dir/node_modules/find-up/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pkg-dir/node_modules/path-exists/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pkg-dir/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pluralize/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/posix-character-classes/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/postgres-array/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/postgres-bytea/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/postgres-date/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/postgres-interval/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/prelude-ls/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/prepend-http/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/prettier-eslint-cli/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/prettier-eslint-cli/node_modules/has-flag/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/prettier-eslint-cli/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/prettier-eslint-cli/node_modules/yargs-parser/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/prettier-eslint-cli/node_modules/yargs/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/prettier-eslint-cli/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/prettier-eslint/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/prettier/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pretty-format/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/progress/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/promisify-call/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/proto-list/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/proxy-agent/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/proxy-agent/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/proxy-from-env/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pseudomap/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/pstree.remy/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/quick-lru/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/raw-body/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/rc/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/read-pkg-up/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/read-pkg/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/readable-stream/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/readable-stream/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/readdirp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/regenerator-runtime/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/regex-not/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/regexpp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/registry-auth-token/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/registry-url/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/remove-trailing-separator/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/repeat-element/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/repeat-string/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/require-directory/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/require-main-filename/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/require-relative/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/require-uncached/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/reserved-words/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/resolve-from/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/resolve-url/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/resolve/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/resolve/test/module_dir/zmodules/bbb/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/resolve/test/resolver/baz/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/resolve/test/resolver/browser_field/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/resolve/test/resolver/dot_main/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/resolve/test/resolver/dot_slash_main/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/resolve/test/resolver/incorrect_main/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/restore-cursor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/ret/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/retry-as-promised/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/rimraf/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/run-async/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/rx-lite-aggregates/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/rx-lite/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/rxjs/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/safe-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/sax/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/semver-diff/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/send/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/send/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/send/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/sequelize-cli/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/sequelize/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/sequelize/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/sequelize/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/set-blocking/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/set-value/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/set-value/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/shebang-command/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/shebang-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/shimmer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/sigmund/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/signal-exit/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/simple-swizzle/node_modules/is-arrayish/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/simple-swizzle/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/slice-ansi/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/smart-buffer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/snapdragon-node/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/snapdragon-node/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/snapdragon-node/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/snapdragon-node/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/snapdragon-node/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/snapdragon-util/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/snapdragon-util/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/snapdragon/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/snapdragon/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/snapdragon/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/snapdragon/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/socks-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/socks/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/source-map-resolve/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/source-map-url/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/spdx-correct/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/spdx-exceptions/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/spdx-expression-parse/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/spdx-license-ids/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/split-string/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/split/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/sprintf-js/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/stack-trace/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/static-extend/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/static-extend/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/strip-bom/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/strip-eof/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/strip-json-comments/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/symbol-observable/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/table/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/tar/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/tar/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/term-size/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/terraformer-wkt-parser/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/terraformer/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/text-hex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/text-table/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/through/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/thunkify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/timed-out/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/timers-ext/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/tmp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/to-object-path/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/to-object-path/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/to-regex-range/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/to-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/toidentifier/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/topo/node_modules/hoek/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/topo/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/toposort-class/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/touch/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/touch/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/triple-beam/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/tsscmp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/type-check/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/typedarray/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/typescript-eslint-parser/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/typescript-eslint-parser/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/typescript/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/umzug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/undefsafe/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/underscore/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/union-value/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/union-value/node_modules/set-value/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/union-value/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/unique-string/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/universalify/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/unset-value/node_modules/has-value/node_modules/isobject/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/unset-value/node_modules/has-value/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/unset-value/node_modules/has-values/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/unset-value/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/unset-value/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/unzip-response/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/upath/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/update-notifier/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/urix/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/url-parse-lax/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/use/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/uuid/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/validate-npm-package-license/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/validator/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/vary/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/vue-eslint-parser/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/vue-eslint-parser/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/vue-eslint-parser/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/which-module/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/which/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/wide-align/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/widest-line/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/winston-transport/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/winston/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/winston/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/winston/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/with-callback/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/wkx/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/wordwrap/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/wrap-ansi/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/wrap-ansi/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/wrap-ansi/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/wrap-ansi/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/wrap-ansi/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/wrappy/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/write-file-atomic/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/write/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/xdg-basedir/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/xregexp/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/xtend/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/y18n/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/yargs-parser/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/node_modules/yargs/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-node/package.json" />
+      <path value="$PROJECT_DIR$/bachelors-react/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="297" />
+    <option name="y" value="73" />
+    <option name="width" value="1409" />
+    <option name="height" value="963" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bachelors" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bachelors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bachelors" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bachelors" type="462c0819:PsiDirectoryNode" />
+              <item name="bachelors-node" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/bachelors-react/node_modules/eslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e666c553-5e6e-488b-8b0b-d315a166d393" name="Default Changelist" comment="" />
+      <created>1556458398692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556458398692</updated>
+      <workItem from="1556458399792" duration="1889000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1889000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="297" y="73" width="1409" height="963" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945135" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32982457" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/react-webpack-boilerplate" />
+    </ignored-roots>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bachelors-node/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-node/.env.example">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-node/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="15" lean-forward="true" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/api/data.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/components/AppLayout/index.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/components/elements/Alert/index.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/components/elements/Segment/index.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/components/elements/Segment/style.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/components/elements/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/components/Header/index.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/components/Header/styles.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/reducers/auth.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/pages/Dashboard/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/consts/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/routes/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-185">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/api/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/api/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#1#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/thunks/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/util/handleErrors.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/global.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#23#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/loader.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/src/ui.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/webpack/base.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/webpack/webpack.dev.config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/webpack/webpack.prod.config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/.babelrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/.env.development">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/.env.production">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/.env.test">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-node/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bachelors-react/.postcssrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>
