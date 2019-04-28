@@ -1,0 +1,12 @@
+.idea
+.DS_Store
+
+bachelors-node/node_modules/*
+bachelors-node/.idea/*
+bachelors-node/.env
+bachelors-node/.DS_Store
+
+bachelors-react/node_modules/*
+bachelors-react/.idea/*
+bachelors-react/.env
+bachelors-react/.DS_Store
