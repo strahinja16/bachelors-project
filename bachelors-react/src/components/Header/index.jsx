@@ -1,11 +1,9 @@
 
 import React, { Component } from 'react';
-import {
-  Menu, MenuItem, Container, Segment,
-} from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import { Col, Row } from 'react-flexbox-grid';
 import style from './styles.scss';
+import sharedStyle from '../../shared.scss';
 
 class Header extends Component {
   constructor(props) {
@@ -22,41 +20,37 @@ class Header extends Component {
     onItemChange(url);
   }
 
-  leftMenu() {
-    return (
-      <React.Fragment>
-        <MenuItem name="home" onClick={() => this.itemChangeCallback('/')} />
-      </React.Fragment>
-    );
-  }
-
   render() {
-    const { className } = this.props;
-
-    const segmentClass = classNames(style.segment, {
-      [className]: className,
-    });
-
     return (
-      <Segment className={segmentClass}>
-        <Menu pointing secondary size="large">
-          <Container>
-            {this.leftMenu()}
-          </Container>
-        </Menu>
-      </Segment>
+      <header className={style.mainHeader}>
+        <div className={sharedStyle.container}>
+          <Row end="sm md lg" center="xs" middle="xs sm md lg">
+            <Col xs={12} sm={2} md={2} lg={2}>
+              <h1><span className={sharedStyle.primaryText}>App</span>Theme</h1>
+            </Col>
+            <Col xs={12} sm={10} md={10} lg={10}>
+              <nav className={style.navbar}>
+                <ul>
+                  <li className={style.current}><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </Col>
+          </Row>
+        </div>
+      </header>
     );
   }
 }
 
 Header.defaultProps = {
   activeItem: '/',
-  className: null,
 };
 
 Header.propTypes = {
   activeItem: PropTypes.string,
-  className: PropTypes.string,
   onItemChange: PropTypes.func.isRequired,
 };
 

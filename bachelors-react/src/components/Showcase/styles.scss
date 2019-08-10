@@ -1,0 +1,44 @@
+@import '../../ui';
+
+.showcase {
+  background:url('../../images/showcase.jpg') no-repeat center center;
+  border-bottom:1px solid #56a79a;
+  margin-bottom:30px;
+  height: 600px;
+
+  .container{
+    margin:auto;
+
+    .row {
+      height: 600px;
+    }
+
+    .primaryText {
+      color: $main-color;
+    }
+
+    h1 {
+      font-size:50px;
+      margin:0;
+      padding-bottom:20px;
+    }
+
+    p {
+      color: #ccc;
+      margin: auto;
+    }
+
+    .showcaseContent {
+      margin: auto !important;
+      background: #333 !important;
+      color: #fff !important;
+      border-radius: 90px !important;
+      padding: 40px !important;
+      opacity: 0.9 !important;
+    }
+    img {
+      width: 100%;
+    }
+
+  }
+}
