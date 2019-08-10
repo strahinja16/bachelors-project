@@ -1,0 +1,21 @@
+@import '../../ui';
+
+.footer {
+  background: $main-color;
+  color: #fff;
+
+  .row {
+    height: 200px;
+
+    .col {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

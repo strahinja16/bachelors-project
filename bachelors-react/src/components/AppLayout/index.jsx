@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import Header from '../Header';
 import style from './styles.scss';
+import Footer from '../Footer';
 
 const AppLayout = ({
   children, history, location,
@@ -20,6 +21,7 @@ const AppLayout = ({
         activeItem={location.pathname}
       />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };
