@@ -1,0 +1,60 @@
+@import '../../ui';
+
+.contact {
+  padding: 40px 0;
+  background: #333;
+  color: #fff;
+
+  .container {
+    .primaryText {
+      color: $main-color;
+    }
+
+    form {
+      padding: 20px 40px;
+    }
+
+    form input[type="text"]{
+      width: 40%;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    form textarea {
+      width: 40%;
+      height:40px;
+      margin-bottom: 10px;
+    }
+
+    form button{
+      width: 40%;
+      padding: 10px 0;
+      border: 0;
+      background: $main-color;
+      color: #fff;
+    }
+  }
+}
+
+@media(max-width:800px){
+  .contact {
+    .container {
+      form input[type="text"]{
+        width: 80%;
+      }
+
+      form textarea {
+        width: 80%;
+      }
+
+      form button{
+        width: 80%;
+      }
+    }
+  }
+}
