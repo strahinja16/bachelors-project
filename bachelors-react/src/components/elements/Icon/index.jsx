@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Col } from 'react-flexbox-grid';
-import {  } from 'react-icons/fa';
+import style from './styles.scss';
 
 const Icon = ({ heading, text, icon }) => (
   <Col xs={12} sm={4} md={4} lg={4}>
     {icon}
-    <h4>{heading}</h4>
+    <h4 className={style.heading}>{heading}</h4>
     <p>{text}</p>
   </Col>
 );

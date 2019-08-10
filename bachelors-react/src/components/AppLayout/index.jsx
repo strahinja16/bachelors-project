@@ -3,7 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import Header from '../Header';
-import style from './styles.scss';
 import Footer from '../Footer';
 
 const AppLayout = ({
@@ -16,7 +15,6 @@ const AppLayout = ({
   return (
     <div>
       <Header
-        className={style.headerBottomMargin}
         onItemChange={changeRoute}
         activeItem={location.pathname}
       />

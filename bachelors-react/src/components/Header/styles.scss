@@ -5,22 +5,45 @@
 }
 
 .navbar {
-  text-transform:uppercase;
+  text-transform: uppercase;
+
+  .col {
+  }
+
+  ul {
+    padding-left: 12px;
+  }
 
   li {
-    display:inline;
-    padding-right:20px;
+    display: inline;
+    padding-right: 20px;
     list-style:none;
   }
 
   a {
-    text-decoration:none;
+    text-decoration: none;
     color: $main-color;
   }
 
   li.current a, #navbar a:hover{
     color: black;
     border-bottom: 3px solid $main-color;
-    padding-bottom:3px;
+    padding-bottom: 3px;
+  }
+}
+
+.primaryText {
+  color: $main-color;
+}
+
+.container {
+  margin: auto;
+}
+
+
+@media only screen and (max-width: 1100px) and (min-width: 576px)  {
+  .col {
+    display: flex;
+    align-items: center;
   }
 }

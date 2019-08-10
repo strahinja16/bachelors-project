@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Col, Row } from 'react-flexbox-grid';
 import style from './styles.scss';
-import sharedStyle from '../../shared.scss';
 
 class Header extends Component {
   constructor(props) {
@@ -23,10 +22,10 @@ class Header extends Component {
   render() {
     return (
       <header className={style.mainHeader}>
-        <div className={sharedStyle.container}>
-          <Row end="sm md lg" center="xs" middle="xs sm md lg">
-            <Col xs={12} sm={2} md={2} lg={2}>
-              <h1><span className={sharedStyle.primaryText}>App</span>Theme</h1>
+        <div className={style.container}>
+          <Row end="sm" center="xs" middle="lg">
+            <Col className={style.col} xOffset={1} xs={12} sm={1} md={1} lg={1}>
+              <h1><span className={style.primaryText}>App</span>Theme</h1>
             </Col>
             <Col xs={12} sm={10} md={10} lg={10}>
               <nav className={style.navbar}>

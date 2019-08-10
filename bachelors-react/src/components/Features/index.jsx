@@ -9,11 +9,9 @@ const Features = () => (
   <IconContext.Provider value={{ className: style.fa }}>
     <section>
       <div className={style.container}>
-        <Row center="xs sm md lg">
+        <Row center="xs">
           <Col xs={12} sm={12} md={12} lg={12}>
             <h2>Core Features</h2>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            <p>What's Included</p>
             <IconRow icons={FirstRowIcons} />
             <IconRow icons={SecondRowIcons} />
           </Col>

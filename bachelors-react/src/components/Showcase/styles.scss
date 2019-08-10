@@ -4,13 +4,13 @@
   background:url('../../images/showcase.jpg') no-repeat center center;
   border-bottom:1px solid #56a79a;
   margin-bottom:30px;
-  height: 600px;
+  height: 700px;
 
   .container{
     margin:auto;
 
     .row {
-      height: 600px;
+      height: 700px;
     }
 
     .primaryText {
@@ -40,5 +40,25 @@
       width: 100%;
     }
 
+  }
+}
+
+@media(max-width:800px){
+  .showcase {
+    .container {
+      h1 {
+        font-size: 27px;
+      }
+    }
+  }
+}
+
+@media(max-width:500px){
+  .showcase {
+    .container {
+      .showcaseContent{
+        padding: 40px 10px !important;
+      }
+    }
   }
 }
