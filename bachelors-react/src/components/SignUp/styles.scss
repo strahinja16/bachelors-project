@@ -1,0 +1,55 @@
+@import '../../ui';
+
+.signUp {
+  padding: 30px 0 20px 0;
+  background: #333;
+  color: #fff;
+
+  .container {
+    .primaryText {
+      color: $main-color;
+    }
+
+    form {
+      padding: 20px 40px;
+    }
+
+    form input {
+      width: 40%;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    form button{
+      width: 40%;
+      padding: 10px 0;
+      border: 0;
+      margin-top: 10px;
+      background: $main-color;
+      color: #fff;
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+}
+
+@media(max-width:800px){
+  .signUp {
+    .container {
+      form input {
+        width: 80%;
+      }
+
+      form button {
+        width: 80%;
+      }
+    }
+  }
+}
