@@ -1,12 +1,12 @@
 
-import Segment from './Segment';
 import Alert from './Alert';
 import Icon from './Icon';
 import IconRow from './IconRow';
+import PriceBox from './PriceBox';
 
 export {
-  Segment,
   Alert,
   Icon,
   IconRow,
+  PriceBox,
 };

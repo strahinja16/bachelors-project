@@ -5,8 +5,8 @@ import { Row } from 'react-flexbox-grid';
 import Icon from '../Icon';
 
 const IconRow = ({ icons }) => (
-  <Row center="xs sm md lg">
-    { icons.map(({ heading, text, icon }) => <Icon heading={heading} text={text} icon={icon} />) }
+  <Row center="xs">
+    { icons.map(({ heading, text, icon }) => <Icon key={heading} heading={heading} text={text} icon={icon} />) }
   </Row>
 );
 

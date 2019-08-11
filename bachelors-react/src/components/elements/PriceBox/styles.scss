@@ -1,0 +1,39 @@
+@import "../../../ui";
+.box {
+  background: #fff;
+  color: #555;
+  list-style-type: none;
+  border: 1px solid #555;
+  margin: 20px 15px 0 15px;
+  padding: 0;
+  transition: 0.3s;
+
+  li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+  }
+
+  button {
+    background-color: $main-color;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    font-size:18px;
+  }
+
+  .emphasized {
+    background-color: $emphasize-color;
+  }
+
+  .primary {
+    background-color: $main-color;
+    color: black;
+  }
+
+  .secondary {
+    background-color: black;
+    color: #fff;
+  }
+}

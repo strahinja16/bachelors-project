@@ -24,7 +24,7 @@ class Header extends Component {
       <header className={style.mainHeader}>
         <div className={style.container}>
           <Row end="sm" center="xs" middle="lg">
-            <Col className={style.col} xOffset={1} xs={12} sm={1} md={1} lg={1}>
+            <Col className={style.col} xs={12} sm={1} md={1} lg={1}>
               <h1><span className={style.primaryText}>App</span>Theme</h1>
             </Col>
             <Col xs={12} sm={10} md={10} lg={10}>
