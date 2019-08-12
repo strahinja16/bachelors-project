@@ -25,15 +25,21 @@
     color: $main-color;
   }
 
-  li.current a, #navbar a:hover{
+  li.current a, a:hover{
     color: black;
     border-bottom: 3px solid $main-color;
     padding-bottom: 3px;
   }
 }
 
-.primaryText {
-  color: $main-color;
+.logo {
+  color: black !important;
+  font-size: 2rem;
+}
+
+.logoPrimaryText {
+  color: $main-color !important;
+  font-size: 2rem;
 }
 
 .container {
