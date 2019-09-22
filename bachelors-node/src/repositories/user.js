@@ -1,6 +1,8 @@
 const { hashPassword } = require('services/auth');
 const {
   User,
+  Subscription,
+  Product,
 } = require('models');
 
 /**
@@ -18,6 +20,36 @@ const updatePassword = async (id, newPassword) => User.update(
   },
 );
 
+/**
+ * Finds user, product and subscription by their fastspring ids
+ * @param fastspringId
+ * @param name
+ * @returns {Promise<{user: Model, product: Model, subscription: Model}>}
+ */
+const findUserProductAndSubscriptionByFastSpringIds = async (fastspringId, name) => {
+  const product = await Product.findOne({
+    where: {
+      name,
+    },
+    raw: true,
+  });
+
+  const subscription = await Subscription.findOne({
+    where: {
+      accountId: fastspringId,
+    },
+    raw: true,
+  });
+
+  const user = await User.findById(subscription.userId, { raw: true });
+  return {
+    user,
+    product,
+    subscription,
+  };
+};
+
 module.exports = {
   updatePassword,
+  findUserProductAndSubscriptionByFastSpringIds,
 };

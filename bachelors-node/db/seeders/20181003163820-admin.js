@@ -1,5 +1,6 @@
 
 const uuid = require('uuid/v4');
+const faker = require('faker');
 const bcrypt = require('bcrypt');
 
 const passwordHashSaltRounds = 10;
@@ -9,11 +10,14 @@ module.exports = {
     try {
       await queryInterface.bulkInsert('users', [{
         id: uuid(),
-        name: 'Super admin',
+        firstName: faker.name.firstName(),
+        lastName: faker.name.lastName(),
         email: 'admin@test.com',
         password: bcrypt.hashSync('admin', passwordHashSaltRounds),
         status: 'active',
         isAdmin: true,
+        companyName: faker.company.companyName(),
+        country: faker.address.country(),
         createdAt: new Date(),
         updatedAt: new Date(),
       }], { transaction });

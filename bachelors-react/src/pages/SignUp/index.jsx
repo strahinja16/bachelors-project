@@ -5,7 +5,7 @@ import SignUp from '../../components/SignUp';
 
 const SignUpPage = ({ history: { push } }) => (
   <Fragment>
-    <SignUp route="/" push={push} signUp={() => {}} />
+    <SignUp route="/" push={push} />
   </Fragment>
 );
 

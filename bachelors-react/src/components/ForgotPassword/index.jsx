@@ -1,51 +1,47 @@
-/* eslint-disable jsx-a11y/label-has-for */
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import { Message } from 'semantic-ui-react';
 import Joi from 'joi-browser';
 import { Col, Row } from 'react-flexbox-grid';
 import { Alert } from '../elements';
-import style from './styles.scss';
+import { forgotPassword } from '../../api/auth';
+import style from './style.scss';
 
-class Login extends Component {
+class ForgotPassword extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       email: '',
-      password: '',
-      validationError: null,
+      validationError: '',
+      successMessage: '',
       loading: false,
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.onForgotPassword = this.onForgotPassword.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
-  onForgotPassword(e) {
-    e.preventDefault();
-
-    const { push } = this.props;
-    push('/forgot-password');
-  }
-
-  setError(validationError = null) {
-    this.setState({ validationError });
-  }
-
-  handleLogin() {
-    const { email, password } = this.state;
-    const { login: loginAction, route, push } = this.props;
-
+  onSubmit() {
+    const { email } = this.state;
     this.setState({ loading: true });
 
-    loginAction({ email, password })
-      .then(() => push(route))
+    forgotPassword(email)
+      .then(({ data: { message } }) => {
+        this.setState({
+          successMessage: message,
+          loading: false,
+        });
+      })
       .catch((e) => {
         const { data } = e.response;
         this.setError(data.message);
         this.setState({ loading: false });
       });
+  }
+
+  setError(validationError = null) {
+    this.setState({ validationError });
   }
 
   handleInputChange({ target: { name, value } }) {
@@ -57,25 +53,20 @@ class Login extends Component {
     this.setError();
 
     if (this.validateForm()) {
-      this.handleLogin();
+      this.onSubmit();
     }
   }
 
   validateForm() {
-    const { email, password } = this.state;
-
+    const { email } = this.state;
     const schema = Joi.object().keys({
       email: Joi.string()
         .email({ minDomainAtoms: 2 })
         .required()
         .error(new Error('Invalid email format.')),
-      password: Joi.string()
-        .required()
-        .error(new Error('Password is required.')),
     });
 
-    const result = Joi.validate({ email, password }, schema);
-
+    const result = Joi.validate({ email }, schema);
     if (result.error && result.error.message) {
       this.setState({
         validationError: result.error.message,
@@ -86,22 +77,27 @@ class Login extends Component {
 
   render() {
     const {
-      email, password, validationError, loading,
+      email, validationError, loading, successMessage,
     } = this.state;
 
     return (
-      <section className={style.login}>
+      <section className={style.forgotPassword}>
         <div className={style.container}>
           <Row center="xs">
             <Col xs={12} sm={12} md={12} lg={12}>
-              <h2><span className={style.primaryText}>Log</span>in</h2>
+              <h2><span className={style.primaryText}>Forgot</span> password</h2>
               <form onSubmit={this.handleSubmit}>
                 <Alert
                   className={validationError
-                    ? style.errorMessage
+                    ? style.message
                     : style.hidden}
                   message={validationError}
                 />
+                {successMessage && (
+                  <div className={style.message}>
+                    <Message positive content={successMessage} />
+                  </div>
+                )}
                 <div>
                   <label htmlFor="email">Email</label>
                   <input
@@ -112,32 +108,14 @@ class Login extends Component {
                     value={email}
                   />
                 </div>
-                <div>
-                  <label htmlFor="password">Password</label>
-                  <input
-                    onChange={this.handleInputChange}
-                    type="password"
-                    placeholder="Password"
-                    name="password"
-                    value={password}
-                  />
-                </div>
                 <button
-                  className={style.loginButton}
+                  className={style.submitButton}
                   disabled={loading}
                   type="submit"
                   onSubmit={this.handleSubmit}
                   name="button"
                 >
-                  Login
-                </button>
-                <button
-                  className={style.forgotButton}
-                  disabled={loading}
-                  onClick={this.onForgotPassword}
-                  name="button"
-                >
-                  Forgot password?
+                  Submit
                 </button>
               </form>
             </Col>
@@ -148,10 +126,4 @@ class Login extends Component {
   }
 }
 
-Login.propTypes = {
-  route: PropTypes.string.isRequired,
-  login: PropTypes.func.isRequired,
-  push: PropTypes.func.isRequired,
-};
-
-export default Login;
+export default ForgotPassword;

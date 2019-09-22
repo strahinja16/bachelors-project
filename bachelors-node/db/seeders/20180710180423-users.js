@@ -11,10 +11,13 @@ module.exports = {
     for (let i = 0; i < 10; i++) {
       insertData.push({
         id: uuid(),
-        name: faker.name.findName(),
+        firstName: faker.name.firstName(),
+        lastName: faker.name.lastName(),
         email: `user${i}@test.com`,
         password: bcrypt.hashSync('test', passwordHashSaltRounds),
         status: 'active',
+        companyName: faker.company.companyName(),
+        country: faker.address.country(),
         createdAt: new Date(),
         updatedAt: new Date(),
       });

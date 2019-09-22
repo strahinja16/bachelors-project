@@ -55,6 +55,14 @@ class Mail {
       text,
     };
   }
+
+  setFullName(firstName, lastName) {
+    this.fullName = `${firstName} ${lastName}`;
+  }
+
+  getFullName() {
+    return this.fullName;
+  }
 }
 
 module.exports = Mail;

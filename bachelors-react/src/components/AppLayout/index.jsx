@@ -6,7 +6,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 
 const AppLayout = ({
-  children, history, location,
+  children, history, location, isLoggedIn, isAdmin,
 }) => {
   const changeRoute = (newRoute) => {
     history.push(newRoute);
@@ -17,6 +17,8 @@ const AppLayout = ({
       <Header
         onItemChange={changeRoute}
         activeItem={location.pathname}
+        isLoggedIn={isLoggedIn}
+        isAdmin={isAdmin}
       />
       <main>{children}</main>
       <Footer />
@@ -32,6 +34,8 @@ AppLayout.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string,
   }).isRequired,
+  isLoggedIn: PropTypes.bool.isRequired,
+  isAdmin: PropTypes.bool.isRequired,
 };
 
 export default withRouter(AppLayout);

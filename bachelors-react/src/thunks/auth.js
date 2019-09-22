@@ -1,11 +1,18 @@
 
-import { loginUser } from '../reducers/auth';
+import { loginUser, logoutUser } from '../reducers/auth';
 import { login as loginApi } from '../api/auth';
 
-export default function login() {
-  return dispatch => loginApi()
-    .then(({ data: { token } }) => {
-      dispatch(loginUser({ token }));
-      localStorage.setItem('_token', token);
+export function logout() {
+  return (dispatch) => {
+    dispatch(logoutUser());
+    localStorage.removeItem('_token');
+  };
+}
+
+export function login(payload) {
+  return dispatch => loginApi(payload)
+    .then(({ data }) => {
+      dispatch(loginUser(data));
+      localStorage.setItem('_token', data.token);
     });
 }

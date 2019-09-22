@@ -15,13 +15,14 @@ const loginRequest = require('requests/auth/login');
 const forgotPasswordRequest = require('requests/auth/forgotPassword');
 const verifyTokenRequest = require('requests/auth/verifyToken');
 const resetPasswordRequest = require('requests/auth/resetPassword');
-const registerRequest = require('requests/auth/register');
+const signUpRequest = require('requests/auth/signUp');
 const emailService = require('services/email');
 const ForgotPasswordMail = require('resources/mails/forgotPasswordMail');
 const WelcomeMail = require('resources/mails/welcomeMail');
 const { updatePassword } = require('repositories/user');
 const { getPasswordRecoveryWithUser } = require('repositories/auth');
 const { User, PasswordRecovery } = require('models');
+const Op = require('sequelize').Op;
 
 const router = Router();
 
@@ -56,7 +57,7 @@ router.post('/login', validate(loginRequest), async (req, res) => {
 
     return res.status(200).send({
       data: {
-        ...user,
+        user,
         token: userToken,
       },
     });
@@ -68,9 +69,9 @@ router.post('/login', validate(loginRequest), async (req, res) => {
   }
 });
 
-router.post('/register', validate(registerRequest), async (req, res) => {
+router.post('/sign-up', validate(signUpRequest), async (req, res) => {
   try {
-    const { email, password, name } = req.body;
+    const { email, password, firstName, lastName, company } = req.body;
 
     const userExists = await User.findOne({
       where: { email },
@@ -81,19 +82,22 @@ router.post('/register', validate(registerRequest), async (req, res) => {
       return responseUserExists(res);
     }
 
-    const user = await User.create({
-      email,
-      name,
-      password: hashPassword(password),
-      status: 'inactive',
-      registerToken: uuid(),
+     const user = await User.create({
+       email,
+       firstName,
+       lastName,
+       password: hashPassword(password),
+       status: 'inactive',
+       signUpToken: uuid(),
+       company,
+       country: 'Serbia',
     });
 
     const subject = 'Registration confirmation';
-    const mail = new WelcomeMail(account, email, subject, user.registerToken);
+    const mail = new WelcomeMail(account, email, subject, user.signUpToken, firstName, lastName);
     await emailService.sendEmail(mail);
 
-    return res.send();
+    return res.send({ message: 'Registration successful. Confirmation email sent.' });
   } catch (e) {
     logger.error(e);
     return res.status(500).send({
@@ -115,6 +119,22 @@ router.post('/forgot-password', validate(forgotPasswordRequest), async (req, res
     const token = uuid();
     const subject = 'Password recovery';
     const mail = new ForgotPasswordMail(account, email, subject, token);
+
+    const prevPasswordRecoveries = await PasswordRecovery.findAll({
+      where: {
+        userId: user.id,
+      },
+    });
+
+    if (prevPasswordRecoveries) {
+      await PasswordRecovery.destroy({
+        where: {
+          id: {
+            [Op.in]: prevPasswordRecoveries.map(({ id }) => id),
+          }
+        },
+      })
+    }
 
     await PasswordRecovery.create({
       token,
@@ -169,13 +189,20 @@ router.post('/reset-password', validate(resetPasswordRequest), async (req, res) 
     }
 
     const {
-      User: { id },
+      id,
+      User: { id: userId },
     } = passwordRecoveryWithUser;
 
-    const update = await updatePassword(id, password);
+    const update = await updatePassword(userId, password);
     if (!update) {
       return responseBadRequest(res);
     }
+
+    await PasswordRecovery.destroy({
+      where: {
+        id,
+      }
+    });
 
     return res.status(200).send({ message: 'Password successfully changed.' });
   } catch (e) {
@@ -188,14 +215,14 @@ router.post('/reset-password', validate(resetPasswordRequest), async (req, res) 
 
 router.get('/confirm/:token', async (req, res) => {
   try {
-    const { token: registerToken } = req.params;
+    const { token: signUpToken } = req.params;
 
     const user = await User.findOne({
-      where: { registerToken },
+      where: { signUpToken },
       raw: true,
     });
 
-    user.registerToken = null;
+    user.signUpToken = null;
     user.status = 'active';
 
     await User.update({ ...user }, { where: { id: user.id } });

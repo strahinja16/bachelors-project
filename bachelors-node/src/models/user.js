@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+const moment = require('moment');
 
 const STATUSES = {
   ACTIVE: 'active',
@@ -11,7 +12,11 @@ const schema = {
     defaultValue: Sequelize.UUIDV4,
     primaryKey: true,
   },
-  name: {
+  firstName: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
+  lastName: {
     type: Sequelize.STRING,
     allowNull: false,
   },
@@ -33,9 +38,34 @@ const schema = {
     allowNull: false,
     defaultValue: STATUSES.INACTIVE,
   },
-  registerToken: {
+  signUpToken: {
     type: Sequelize.UUID,
     allowNull: true,
+  },
+  companyName: {
+    type: Sequelize.STRING,
+    allowNull: true,
+  },
+  country: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
+  licence: {
+    type: Sequelize.UUID,
+    allowNull: true,
+  },
+  licenceExpirationDate: {
+    type: Sequelize.DATE,
+    allowNull: true,
+  },
+  isLicensed: {
+    type: Sequelize.VIRTUAL(Sequelize.BOOLEAN),
+    get() {
+      if (!this.get('licenceExpirationDate')) {
+        return false;
+      }
+      return moment().isBefore(moment(this.get('licenceExpirationDate')));
+    },
   },
 };
 
@@ -50,6 +80,10 @@ class User extends Sequelize.Model {
   static associate(models) {
     this.userPasswordRecoveryAssociation = this.hasMany(models.PasswordRecovery, {
       as: 'passwordRecoveries',
+      foreignKey: 'userId',
+    });
+    this.userOrderAssociation = this.hasMany(models.Order, {
+      as: 'orders',
       foreignKey: 'userId',
     });
   }

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist';
@@ -10,13 +11,18 @@ import thunk from 'redux-thunk';
 import { Router } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import './loader';
-import reducers from './reducers';
+import reducer from './reducers';
 import Routes from './routes';
 import './global.scss';
 
-const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 const history = createHistory();
-const store = createStoreWithMiddleware(reducers);
+const composeEnhancers = composeWithDevTools({
+  // Specify name here, actionsBlacklist, actionsCreators and other options if needed
+});
+const store = createStore(reducer, /* preloadedState, */ composeEnhancers(
+  applyMiddleware(thunk),
+  // other store enhancers if any
+));
 const persisted = persistStore(store);
 
 // To ease debugging.

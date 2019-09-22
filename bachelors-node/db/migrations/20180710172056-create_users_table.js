@@ -9,7 +9,11 @@ module.exports = {
         defaultValue: Sequelize.UUIDV4,
         primaryKey: true,
       },
-      name: {
+      firstName: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      lastName: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -30,8 +34,24 @@ module.exports = {
         values: statuses,
         allowNull: false,
       },
-      registerToken: {
+      signUpToken: {
         type: Sequelize.UUID,
+        allowNull: true,
+      },
+      companyName: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      country: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      licence: {
+        type: Sequelize.UUID,
+        allowNull: true,
+      },
+      licenceExpirationDate: {
+        type: Sequelize.DATE,
         allowNull: true,
       },
       createdAt: {

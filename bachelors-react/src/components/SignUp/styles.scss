@@ -14,9 +14,15 @@
       padding: 20px 40px;
     }
 
+    .message {
+      width: 40%;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
     form input {
       width: 40%;
-      height: 30px;
+      height: 37px;
       margin-bottom: 10px;
     }
 
@@ -32,6 +38,11 @@
       margin-top: 10px;
       background: $main-color;
       color: #fff;
+    }
+
+    form button:disabled {
+      background-color: darken($main-color, 20%);
+      color: gray;
     }
 
     .hidden {

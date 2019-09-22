@@ -1,22 +1,28 @@
 
 import { Map } from 'immutable';
 import { createAction, handleActions } from 'redux-actions';
-import { LOGIN_ACTION } from '../consts/actions';
+import { LOGIN_ACTION, LOGOUT_ACTION } from '../consts/actions';
 
 // CREATE ACTIONS
 export const loginUser = createAction(LOGIN_ACTION);
+export const logoutUser = createAction(LOGOUT_ACTION);
 
 // SET INITIAL STATE
 const INITIAL_STATE = Map({
   token: null,
+  user: null,
 });
 
 // WRITE HANDLERS FOR ACTIONS
 export default handleActions(
   {
-    [LOGIN_ACTION](state, { payload }) {
+    [LOGOUT_ACTION](state) {
+      return state.merge(INITIAL_STATE);
+    },
+    [LOGIN_ACTION](state, { payload: { data } }) {
       return state.merge({
-        token: payload.token,
+        token: data.token,
+        user: data.user,
       });
     },
   },

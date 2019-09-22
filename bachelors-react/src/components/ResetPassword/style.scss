@@ -1,9 +1,10 @@
 @import '../../ui';
 
-.contact {
-  padding: 40px 0;
+.resetPassword {
+  padding: 30px 0 20px 0;
   background: #333;
   color: #fff;
+  height: 600px;
 
   .container {
     .primaryText {
@@ -14,9 +15,15 @@
       padding: 20px 40px;
     }
 
-    form input[type="text"]{
+    form input {
       width: 40%;
       height: 37px;
+      margin-bottom: 10px;
+    }
+
+    .message {
+      width: 40%;
+      margin: auto;
       margin-bottom: 10px;
     }
 
@@ -25,34 +32,33 @@
       margin-bottom: 10px;
     }
 
-    form textarea {
-      width: 40%;
-      height: 54px;
-      margin-bottom: 10px;
-    }
-
     form button{
       width: 40%;
       padding: 10px 0;
       border: 0;
+      margin-top: 10px;
+    }
+
+    .submitButton {
+      margin-right: 5px;
       background: $main-color;
       color: #fff;
+    }
+
+    .hidden {
+      display: none;
     }
   }
 }
 
 @media(max-width:800px){
-  .contact {
+  .changePassword {
     .container {
-      form input[type="text"]{
+      form input {
         width: 80%;
       }
 
-      form textarea {
-        width: 80%;
-      }
-
-      form button{
+      form button {
         width: 80%;
       }
     }

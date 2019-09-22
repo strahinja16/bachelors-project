@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Joi from 'joi-browser';
 import { Col, Row } from 'react-flexbox-grid';
+import { Message } from 'semantic-ui-react';
 import { Alert } from '../elements';
+import { signUp as signUpAction } from '../../api/auth';
 import style from './styles.scss';
 
 class SignUp extends Component {
@@ -18,6 +20,7 @@ class SignUp extends Component {
       company: '',
       validationError: null,
       loading: false,
+      successMessage: '',
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -33,16 +36,22 @@ class SignUp extends Component {
       firstName, lastName, company, email, password,
     } = this.state;
 
-    const { signUp: signUpAction, route, push } = this.props;
+    const { route, push } = this.props;
 
     this.setState({ loading: true });
     signUpAction({
       firstName, lastName, company, email, password,
     })
-      .then(() => push(route))
+      .then(({ data: { message } }) => {
+        this.setState({
+          successMessage: message,
+          loading: false,
+        }, () => {
+          setTimeout(() => push(route), 5000);
+        });
+      })
       .catch((e) => {
-        const { data } = e.response;
-        this.setError(data.message);
+        this.setError(e.toString());
         this.setState({ loading: false });
       });
   }
@@ -98,8 +107,10 @@ class SignUp extends Component {
 
   render() {
     const {
-      firstName, lastName, company, email, password, validationError, loading,
+      firstName, lastName, company, email, password, validationError, loading, successMessage,
     } = this.state;
+
+    console.log(successMessage);
 
     return (
       <section className={style.signUp}>
@@ -108,7 +119,17 @@ class SignUp extends Component {
             <Col xs={12} sm={12} md={12} lg={12}>
               <h2><span className={style.primaryText}>Sign</span>Up</h2>
               <form onSubmit={this.handleSubmit}>
-                <Alert className={validationError ? '' : style.hidden} message={validationError} />
+                <Alert
+                  className={validationError
+                    ? style.message
+                    : style.hidden}
+                  message={validationError}
+                />
+                {successMessage && (
+                  <div className={style.message}>
+                    <Message positive content={successMessage} />
+                  </div>
+                )}
                 <div>
                   <label htmlFor="firstName">First name</label>
                   <input
@@ -178,7 +199,6 @@ class SignUp extends Component {
 
 SignUp.propTypes = {
   route: PropTypes.string.isRequired,
-  signUp: PropTypes.func.isRequired,
   push: PropTypes.func.isRequired,
 };
 

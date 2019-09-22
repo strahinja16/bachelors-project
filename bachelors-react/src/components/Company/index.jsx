@@ -11,7 +11,7 @@ const Company = () => (
           <h4>Contact Us</h4>
           <ul>
             <li><FaPhone /> (617) 555-5555</li>
-            <li><FaEnvelope /> support@apptheme.test</li>
+            <li><FaEnvelope /> support@appname.test</li>
             <li><FaMap /> 400 Main st, New York NY</li>
           </ul>
         </Col>

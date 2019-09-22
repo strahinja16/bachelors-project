@@ -6,6 +6,8 @@ const {
   host, user, password, database,
 } = db;
 
+console.log(logger, 'sequelize');
+
 const sequelize = new Sequelize(database, user, password, {
   host,
   dialect: 'postgres',
@@ -18,7 +20,7 @@ const sequelize = new Sequelize(database, user, password, {
     idle: 10000,
   },
 
-  logging: process.env.NODE_ENV === 'development' ? logger.info : false,
+  logging: process.env.NODE_ENV === 'development',
 
   define: {
     underscored: false,
