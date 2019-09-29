@@ -6,9 +6,9 @@ import Profile from '../../components/Profile';
 import { unsubscribe } from '../../thunks/subscription';
 
 const ProfilePage = ({ user, unsubscribeAction }) => (
-  <segment>
+  <section>
     <Profile user={user} unsubscribeAction={unsubscribeAction} />
-  </segment>
+  </section>
 );
 
 ProfilePage.propTypes = {

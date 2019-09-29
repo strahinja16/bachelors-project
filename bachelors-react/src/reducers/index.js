@@ -4,6 +4,7 @@ import { persistReducer } from 'redux-persist';
 import immutableTransform from 'redux-persist-transform-immutable';
 import storage from 'redux-persist/lib/storage';
 import auth from './auth';
+import admin from './admin';
 
 const persistConfig = {
   key: 'root',
@@ -14,6 +15,7 @@ const persistConfig = {
 
 const combinedReducers = combineReducers({
   auth,
+  admin,
 });
 
 export default persistReducer(persistConfig, combinedReducers);
