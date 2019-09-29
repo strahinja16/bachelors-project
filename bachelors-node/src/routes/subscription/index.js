@@ -119,13 +119,12 @@ router.post('/generate-licence', async (req, res) => {
     const { email } = req.body;
     const user = await User.findOne({ where: { email } });
 
-    const licence = uuid();
     await user.update({
       licence: uuid(),
       licenceExpirationDate: moment().add(1, 'weeks'),
     });
 
-    return res.send(licence);
+    return res.send('Please check your email for the details of purchase');
   } catch (ex) {
     logger.error(ex);
     return res.status(500).send({

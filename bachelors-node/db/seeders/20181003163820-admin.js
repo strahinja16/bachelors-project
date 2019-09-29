@@ -12,7 +12,7 @@ module.exports = {
         id: uuid(),
         firstName: faker.name.firstName(),
         lastName: faker.name.lastName(),
-        email: 'admin@test.com',
+        email: 'admin2@test.com',
         password: bcrypt.hashSync('admin', passwordHashSaltRounds),
         status: 'active',
         isAdmin: true,

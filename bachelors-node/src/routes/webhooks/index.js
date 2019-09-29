@@ -2,7 +2,7 @@ const { Router } = require('express');
 const logger = require('services/logger');
 const emailService = require('services/email');
 const responses = require('services/responses');
-const { Order, Subscription } = require('models');
+const { Order, Subscription, User } = require('models');
 const {
   findUserProductAndSubscriptionByFastSpringIds: findUserProductAndSubscription,
 } = require('repositories/user');
@@ -11,6 +11,7 @@ const {
 } = require('../../config');
 const router = Router();
 const PurchaseMail = require('../../resources/mails/purchaseMail');
+const FailedMail = require('../../resources/mails/failedMail');
 
 const errorResponse = res => res.status(500).send({ message: responses(500) });
 
@@ -65,13 +66,17 @@ router.post('/order-failed', async (req, res) => {
       return errorResponse(res);
     }
 
+    const user = await User.findOne({ where: { fastspringAccountId: account }, raw: true });
+
     await Subscription.destroy({
       where: {
-        accountId: account,
+        userId: user.id,
       },
     });
 
-    // socket reason
+    const subject = 'Order failed.';
+    const mail = new FailedMail(mailAccount, 'strahinjadevmail2@gmail.com', subject, user, reason);
+    await emailService.sendEmail(mail);
 
     return res.send();
   } catch (ex) {
