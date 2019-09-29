@@ -17,7 +17,7 @@ module.exports = {
         status: 'active',
         isAdmin: true,
         companyName: faker.company.companyName(),
-        country: faker.address.country(),
+        country: faker.address.countryCode(),
         createdAt: new Date(),
         updatedAt: new Date(),
       }], { transaction });

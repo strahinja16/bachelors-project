@@ -41,7 +41,13 @@ const findUserProductAndSubscriptionByFastSpringIds = async (fastspringId, name)
     raw: true,
   });
 
-  const user = await User.findById(subscription.userId, { raw: true });
+  const user = await User.findOne({
+    where: {
+      id: subscription.userId,
+    },
+    raw: true,
+  });
+
   return {
     user,
     product,

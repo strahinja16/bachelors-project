@@ -1,12 +1,9 @@
 const Sequelize = require('sequelize');
-const { db } = require('config');
-const logger = require('services/logger');
+const { db } = require('../../config');
 
 const {
   host, user, password, database,
 } = db;
-
-console.log(logger, 'sequelize');
 
 const sequelize = new Sequelize(database, user, password, {
   host,

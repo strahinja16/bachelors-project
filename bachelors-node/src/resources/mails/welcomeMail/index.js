@@ -1,8 +1,8 @@
-const Mail = require('resources/mails/mail');
+const Mail = require('../../../resources/mails/mail');
 
 const {
   domains: { api },
-} = require('config');
+} = require('../../../config');
 
 class WelcomeMail extends Mail {
   constructor(sender, recipient, subject, data, firstName, lastName) {
@@ -16,7 +16,7 @@ class WelcomeMail extends Mail {
 
   renderBody(token) {
     const route = `${api}/api/auth/confirm/${token}`;
-    const message = `Welcome ${this.getFullName}!\n\n
+    const message = `Welcome ${this.getFullName()}!\n\n
       Please click on the following link, or paste this into your browser to complete the process:\n\n
       ${route} \n\n`;
     this.setText(message);

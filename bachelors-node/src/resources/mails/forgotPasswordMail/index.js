@@ -1,7 +1,7 @@
-const Mail = require('resources/mails/mail');
+const Mail = require('../../../resources/mails/mail');
 const {
   domains: { frontend },
-} = require('config');
+} = require('../../../config');
 
 class ForgotPasswordMail extends Mail {
   constructor(sender, recipient, subject, data) {

@@ -3,7 +3,7 @@ const {
   domains: {
     frontend,
   },
-} = require('config');
+} = require('../../config');
 const moment = require('moment');
 const uuid = require('uuid/v4');
 const { Router } = require('express');
@@ -71,7 +71,7 @@ router.post('/login', validate(loginRequest), async (req, res) => {
 
 router.post('/sign-up', validate(signUpRequest), async (req, res) => {
   try {
-    const { email, password, firstName, lastName, company } = req.body;
+    const { email, password, firstName, lastName, companyName, country } = req.body;
 
     const userExists = await User.findOne({
       where: { email },
@@ -89,8 +89,8 @@ router.post('/sign-up', validate(signUpRequest), async (req, res) => {
        password: hashPassword(password),
        status: 'inactive',
        signUpToken: uuid(),
-       company,
-       country: 'Serbia',
+       companyName,
+       country,
     });
 
     const subject = 'Registration confirmation';

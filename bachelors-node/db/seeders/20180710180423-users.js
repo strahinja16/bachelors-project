@@ -17,7 +17,7 @@ module.exports = {
         password: bcrypt.hashSync('test', passwordHashSaltRounds),
         status: 'active',
         companyName: faker.company.companyName(),
-        country: faker.address.country(),
+        country: faker.address.countryCode(),
         createdAt: new Date(),
         updatedAt: new Date(),
       });
