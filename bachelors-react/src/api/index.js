@@ -4,7 +4,7 @@ import axios from 'axios';
 const development = process.env.NODE_ENV === 'development';
 
 const instance = axios.create({
-  baseURL: `${process.env.API_URL}/api/`,
+  baseURL: `${process.env.API_URL}/api`,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',

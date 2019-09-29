@@ -20,6 +20,12 @@
       margin-bottom: 10px;
     }
 
+    .select {
+      width: 40%;
+      height: 37px;
+      margin-bottom: 10px;
+    }
+
     form input {
       width: 40%;
       height: 37px;
@@ -55,6 +61,10 @@
   .signUp {
     .container {
       form input {
+        width: 80%;
+      }
+
+      .select {
         width: 80%;
       }
 

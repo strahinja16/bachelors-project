@@ -28,7 +28,6 @@ class ResetPassword extends Component {
   }
 
   handleInputChange({ target: { name, value } }) {
-    console.log({ name, value });
     this.setState({ [name]: value });
   }
 

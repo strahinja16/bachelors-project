@@ -14,12 +14,14 @@ const dynamicImport = loader =>
     loading: () => <Loader active inline="centered" />,
   });
 
-const AdminRoutes = () => <Route path="/admin" render={() => 'Admin route'} />;
+const AdminRoutes = () => <Route path="/admin" exact component={dynamicImport(() => import('../pages/Admin'))} />;
 
 const LoggedInList = ({ isAdmin }) => (
   <Switch>
-    <Route path="/logout" component={dynamicImport(() => import('../components/Logout'))} />
-    <Route path="/" component={Dashboard} />
+    <Route path="/profile" exact component={dynamicImport(() => import('../pages/Profile'))} />
+    <Route exact path="/help" component={dynamicImport(() => import('../pages/Help'))} />
+    <Route path="/logout" exact component={dynamicImport(() => import('../components/Logout'))} />
+    <Route path="/" exact component={Dashboard} />
     {isAdmin && <AdminRoutes />}
     <Redirect to="/" />
   </Switch>
@@ -46,6 +48,7 @@ const LoggedOutList = () => (
       path="/reset-password/:token"
       component={dynamicImport(() => import('../pages/ResetPassword'))}
     />
+    <Route exact path="/help" component={dynamicImport(() => import('../pages/Help'))} />
     <Route path="/" component={Dashboard} />
     <Redirect to="/login" />
   </Switch>
@@ -67,9 +70,11 @@ Routes.defaultProps = {
   isAdmin: false,
 };
 
-const mapStateToProps = ({ auth }) => ({
-  isAdmin: auth.getIn(['user', 'isAdmin']),
-  isLoggedIn: !!auth.get('token'),
-});
+const mapStateToProps = ({ auth }) => {
+  return ({
+    isAdmin: auth.getIn(['user', 'isAdmin']),
+    isLoggedIn: !!auth.get('token'),
+  });
+};
 
 export default withRouter(connect(mapStateToProps)(Routes));

@@ -15,6 +15,9 @@ const NavItems = ({ isLoggedIn, isAdmin, activeItem }) => {
         <li className={activeItem === '/sign-up' ? style.current : ''}>
           <NavLink exact to="/sign-up">Sign up</NavLink>
         </li>
+        <li className={activeItem === '/help' ? style.current : ''}>
+          <NavLink exact to="/help">Help</NavLink>
+        </li>
       </Fragment>
     );
   }
@@ -31,6 +34,9 @@ const NavItems = ({ isLoggedIn, isAdmin, activeItem }) => {
       )}
       <li className={activeItem === '/logout' ? style.current : ''}>
         <NavLink exact to="/logout">Logout</NavLink>
+      </li>
+      <li className={activeItem === '/help' ? style.current : ''}>
+        <NavLink exact to="/help">Help</NavLink>
       </li>
     </Fragment>
   );

@@ -1,0 +1,29 @@
+.profile {
+  .profileList {
+    list-style-type: none;
+    margin: auto;
+    width: 35%;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .licenceLabel {
+      margin: auto;
+      margin-top: 15px;
+      text-align: center;
+    }
+  }
+
+  .licence {
+    width: 35%;
+    margin: auto;
+  }
+
+  button {
+    margin: auto;
+    border: none;
+  }
+}
+

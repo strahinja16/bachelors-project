@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Joi from 'joi-browser';
 import { Col, Row } from 'react-flexbox-grid';
 import { Message } from 'semantic-ui-react';
+import countryList from 'react-select-country-list';
 import { Alert } from '../elements';
 import { signUp as signUpAction } from '../../api/auth';
 import style from './styles.scss';
@@ -17,14 +18,17 @@ class SignUp extends Component {
       password: '',
       firstName: '',
       lastName: '',
-      company: '',
+      companyName: '',
       validationError: null,
       loading: false,
       successMessage: '',
+      countryOptions: countryList().getData(),
+      country: '',
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleCountryChange = this.handleCountryChange.bind(this);
   }
 
   setError(validationError = null) {
@@ -33,14 +37,14 @@ class SignUp extends Component {
 
   handleSignUp() {
     const {
-      firstName, lastName, company, email, password,
+      firstName, lastName, companyName, email, password, country,
     } = this.state;
 
     const { route, push } = this.props;
 
     this.setState({ loading: true });
     signUpAction({
-      firstName, lastName, company, email, password,
+      firstName, lastName, companyName, email, password, country,
     })
       .then(({ data: { message } }) => {
         this.setState({
@@ -60,6 +64,11 @@ class SignUp extends Component {
     this.setState({ [name]: value });
   }
 
+  handleCountryChange({ target: { value } }) {
+    const { countryOptions } = this.state;
+    this.setState({ country: countryOptions.filter(({ label }) => label === value)[0].value });
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     this.setError();
@@ -71,7 +80,7 @@ class SignUp extends Component {
 
   validateForm() {
     const {
-      firstName, lastName, company, email, password,
+      firstName, lastName, companyName, email, password, country,
     } = this.state;
 
     const schema = Joi.object().keys({
@@ -81,9 +90,12 @@ class SignUp extends Component {
       lastName: Joi.string()
         .required()
         .error(new Error('Invalid last name format.')),
-      company: Joi.string()
+      companyName: Joi.string()
         .required()
         .error(new Error('Invalid company format.')),
+      country: Joi.string()
+        .required()
+        .error(new Error('Invalid country format.')),
       email: Joi.string()
         .email({ minDomainAtoms: 2 })
         .required()
@@ -94,7 +106,7 @@ class SignUp extends Component {
     });
 
     const result = Joi.validate({
-      firstName, lastName, company, email, password,
+      firstName, lastName, companyName, email, password, country,
     }, schema);
 
     if (result.error && result.error.message) {
@@ -107,11 +119,10 @@ class SignUp extends Component {
 
   render() {
     const {
-      firstName, lastName, company, email, password, validationError, loading, successMessage,
+      firstName, lastName, companyName, email, password,
+      validationError, loading, successMessage, country, countryOptions,
     } = this.state;
-
-    console.log(successMessage);
-
+    
     return (
       <section className={style.signUp}>
         <div className={style.container}>
@@ -151,13 +162,24 @@ class SignUp extends Component {
                   />
                 </div>
                 <div>
-                  <label htmlFor="company">Company</label>
+                  <label htmlFor="country">Country</label>
+                  <select
+                    className={style.select}
+                    name="country"
+                    value={country}
+                    onChange={this.handleCountryChange}
+                  >
+                    {countryOptions.map(({ label }) => <option key={label}>{label}</option>)}
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="companyName">Company</label>
                   <input
                     onChange={this.handleInputChange}
                     type="text"
                     placeholder="Company"
-                    name="company"
-                    value={company}
+                    name="companyName"
+                    value={companyName}
                   />
                 </div>
                 <div>

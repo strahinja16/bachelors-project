@@ -9,14 +9,15 @@ export function login({ email, password }) {
 }
 
 export function signUp({
-  firstName, lastName, company, email, password,
+  firstName, lastName, companyName, email, password, country,
 }) {
   return axios.post('/auth/sign-up', {
     firstName,
     lastName,
-    company,
+    companyName,
     email,
     password,
+    country,
   });
 }
 
