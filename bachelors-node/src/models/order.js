@@ -10,17 +10,9 @@ const schema = {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  completed: {
-    type: Sequelize.BOOLEAN,
-    allowNull: false,
-  },
   price: {
     type: Sequelize.STRING,
     allowNull: false,
-  },
-  failureReason: {
-    type: Sequelize.STRING,
-    allowNull: true,
   },
 };
 

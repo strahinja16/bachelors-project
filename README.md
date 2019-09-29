@@ -3,4 +3,3 @@
 ### 
 - Node
 - React
-- Docker

@@ -20,29 +20,25 @@ router.post('/order-completed', async (req, res) => {
       return errorResponse(res);
     }
 
-    const { user, product, subscription } = await findUserProductAndSubscription(
-      account.account,
-      items[0].product,
-    );
+    const user = await findUserProductAndSubscription(account, items[0].product);
 
-    if (!user || !product || !subscription || !completed) {
+    if (!user || !completed) {
       return errorResponse(res);
     }
 
     const createdOrder = await Order.create({
       userId: user.id,
-      productId: product.id,
+      productId: user.product.id,
       name: id,
       price: total,
-      completed,
     });
 
     await Subscription.update(
       {
         orderId: createdOrder.id,
-        name: items[0].subscription.id,
+        name: items[0].subscription,
       },
-      { where: { id: subscription.id } },
+      { where: { id: user.subscription.id } },
     );
 
     return res.send();
@@ -56,61 +52,19 @@ router.post('/order-completed', async (req, res) => {
 
 router.post('/order-failed', async (req, res) => {
   try {
-    const {
-      id, account, completed, total, items, reason,
-    } = req.body.events[0].data;
+    const { account, completed, reason } = req.body.events[0].data;
 
-    if (!account || !items) {
+    if (!account || completed) {
       return errorResponse(res);
     }
 
-    const { user, product, subscription } = await findUserProductAndSubscription(
-      account.id,
-      items[0].product,
-    );
-
-    if (!user || !product || !subscription || completed) {
-      return errorResponse(res);
-    }
-
-    await Order.create({
-      userId: user.id,
-      productId: product.id,
-      name: id,
-      price: total,
-      failureReason: reason,
-      completed,
+    await Subscription.destroy({
+      where: {
+        accountId: account,
+      },
     });
 
-    return res.send();
-  } catch (ex) {
-    logger.error(ex);
-    return res.status(500).send({
-      message: responses(500),
-    });
-  }
-});
-
-router.post('/fulfillment-failed', async (req, res) => {
-  try {
-    const {
-      order, product: productId, account, reason,
-    } = req.body.events[0].data;
-
-    if (!account || !productId) {
-      return errorResponse(res);
-    }
-
-    const { user, product } = await findUserProductAndSubscription(account, productId);
-
-    await Order.create({
-      userId: user.id,
-      productId: product.id,
-      name: order,
-      price: product.price,
-      failureReason: reason,
-      completed: false,
-    });
+    // socket reason
 
     return res.send();
   } catch (ex) {

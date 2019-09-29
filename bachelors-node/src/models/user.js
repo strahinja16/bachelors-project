@@ -58,6 +58,10 @@ const schema = {
     type: Sequelize.DATE,
     allowNull: true,
   },
+  fastspringAccountId: {
+    type: Sequelize.STRING,
+    allowNull: true,
+  },
   isLicensed: {
     type: Sequelize.VIRTUAL(Sequelize.BOOLEAN),
     get() {

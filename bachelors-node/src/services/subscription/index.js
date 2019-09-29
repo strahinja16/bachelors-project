@@ -37,36 +37,56 @@ class SubscriptionService {
     return body.security_request_hash === md5(data);
   }
 
-  async createAccount(userId) {
+  async getUserAccount(userId) {
     try {
       const user = await User.findOne({ where: { id: userId } });
-
-      const subscription = await Subscription.findOne({
-        where: { userId: user.id },
-        paranoid: false,
-      });
-
-      if (subscription && subscription.accountId) {
-        if (!subscription.deletedAt) {
-          throw new Error(`Fastspring account exists and is already active. User ${userId}`);
-        } else {
-          throw new Error(`Fastspring account exists and is disabled. User ${userId}`);
-        }
+      if (user.fastspringAccountId) {
+        return user.fastspringAccountId;
       }
 
-      const userPayload = pick(user, ['id', 'firstName', 'lastName', 'email', 'companyName', 'country']);
-      const {
-        data: { id },
-      } = await this.getApiService().createAccount(userPayload);
+      const userPayload = pick(user, [
+        'id',
+        'firstName',
+        'lastName',
+        'email',
+        'companyName',
+        'country'
+      ]);
 
-      await Subscription.create({
-        userId: user.id,
-        accountId: id,
-      });
+      const { data : { id } } = await this.getApiService().createAccount(userPayload);
+
+      await user.update({ fastspringAccountId: id });
 
       return id;
     } catch (e) {
       throw new Error(`Fastspring account creation error. Message: ${e.message}`);
+    }
+  }
+
+  async createSubscription(userId, accountId) {
+    try {
+      await Subscription.create({
+        userId,
+        accountId,
+      });
+    } catch (e) {
+      throw new Error(`Fastspring account creation error. Message: ${e.message}`);
+    }
+  }
+
+  async cancelSubscription(id) {
+    try {
+      const { data } = await this.apiService.cancelSubscription(id);
+      const payload = data.subscriptions[0];
+      if (payload.error) {
+        let errorMessage = '';
+        Object.values(data.error).forEach(msg => errorMessage.concat(` ${msg}`));
+        throw new Error(`Error canceling subscription. Message: ${errorMessage}`);
+      }
+      console.log({ payload });
+    } catch (e) {
+      console.log(e);
+      throw new Error(`Error canceling subscription. Message: ${e.message}`);
     }
   }
 }

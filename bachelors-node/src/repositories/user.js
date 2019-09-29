@@ -21,12 +21,12 @@ const updatePassword = async (id, newPassword) => User.update(
 );
 
 /**
- * Finds user, product and subscription by their fastspring ids
- * @param fastspringId
+ * Returns user with subscription and product
+ * @param accountId
  * @param name
- * @returns {Promise<{user: Model, product: Model, subscription: Model}>}
+ * @returns {Promise<void>}
  */
-const findUserProductAndSubscriptionByFastSpringIds = async (fastspringId, name) => {
+const findUserProductAndSubscriptionByFastSpringIds = async (accountId, name) => {
   const product = await Product.findOne({
     where: {
       name,
@@ -34,25 +34,23 @@ const findUserProductAndSubscriptionByFastSpringIds = async (fastspringId, name)
     raw: true,
   });
 
-  const subscription = await Subscription.findOne({
-    where: {
-      accountId: fastspringId,
-    },
-    raw: true,
-  });
-
   const user = await User.findOne({
     where: {
-      id: subscription.userId,
+      fastspringAccountId: accountId,
     },
     raw: true,
   });
 
-  return {
-    user,
-    product,
-    subscription,
-  };
+  user.subscription = await Subscription.findOne({
+    where: {
+      userId: user.id,
+    },
+    raw: true,
+  });
+
+  user.product = product;
+
+  return user;
 };
 
 module.exports = {

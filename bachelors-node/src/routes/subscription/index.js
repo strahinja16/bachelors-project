@@ -7,7 +7,7 @@ const {
 const logger = require('services/logger');
 const middleware = require('middleware');
 const responses = require('services/responses');
-const { SubscriptionService, subscriptionService } = require('services/subscription');
+const { SubscriptionService, subscriptionService } = require('../../services/subscription');
 const { User, Subscription } = require('models');
 
 const router = Router();
@@ -19,9 +19,21 @@ router.post('/subscribe', middleware('auth'), async (req, res) => {
     const {
       user: { id },
     } = req;
-    const accId = await subscriptionService.createAccount(id);
+
+    const subscription = await Subscription.findOne({
+      where: { userId: id },
+    });
+
+    if (subscription) {
+      return res.status(400).send({ message: 'There is already an active subscription.' });
+    }
+
+    const accId = await subscriptionService.getUserAccount(id);
+
+    await subscriptionService.createSubscription(id, accId);
 
     const productName = SubscriptionService.getSubscriptionProduct();
+
     const { data: session } = await subscriptionService
       .getApiService()
       .createSession(accId, productName);
@@ -41,9 +53,15 @@ router.post('/unsubscribe', middleware('auth'), async (req, res) => {
       user: { id },
     } = req;
 
-    if (!(await Subscription.destroy({ where: { userId: id } }))) {
-      return res.status(400).send({ message: responses(400) });
-    }
+    const subscription = await Subscription.findOne({
+      where: {
+        userId: id,
+      }
+    });
+
+    await subscriptionService.cancelSubscription(subscription.name);
+
+    Subscription.destroy({ where: { userId: id } });
 
     await User.update(
       {
@@ -78,24 +96,10 @@ router.post('/generate-licence', async (req, res) => {
     const licence = uuid();
     await user.update({
       licence: uuid(),
-      licenceExpirationDate: moment().add(1, 'months'),
+      licenceExpirationDate: moment().add(1, 'weeks'),
     });
 
     return res.send(licence);
-  } catch (ex) {
-    logger.error(ex);
-    return res.status(500).send({
-      message: responses(500),
-    });
-  }
-});
-
-router.post('/charge', middleware('auth'), middleware('admin'), async (req, res) => {
-  try {
-    const subscriptions = await Subscription.findAll({ raw: true });
-    await subscriptionService.charge(subscriptions);
-
-    return res.send();
   } catch (ex) {
     logger.error(ex);
     return res.status(500).send({

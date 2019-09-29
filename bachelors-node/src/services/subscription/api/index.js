@@ -40,12 +40,8 @@ class ApiService {
     return this.makeApiCall('/sessions', payload);
   }
 
-  async charge(ids) {
-    if (!validateChargePayload({ ids })) {
-      throw new Error('invalid payload');
-    }
-    const payload = chargeRequest({ ids });
-    return this.makeApiCall('/subscriptions/charge', payload);
+  async cancelSubscription(id) {
+    return this.makeApiCall(`/subscriptions/${id}`, {} ,'delete');
   }
 
   async makeApiCall(url, payload, method = 'post') {

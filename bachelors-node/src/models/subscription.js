@@ -21,7 +21,6 @@ class Subscription extends Sequelize.Model {
     return super.init(schema, {
       sequelize,
       tableName: 'subscriptions',
-      paranoid: true,
     });
   }
 
