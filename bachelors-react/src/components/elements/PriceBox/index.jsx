@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import style from './styles.scss';
 
 const PriceBox = ({
-  isPrimary, packageType, subscriptionFee, diskSpace, dataTransfer, domains,
+  isPrimary, packageType, subscriptionFee, diskSpace, dataTransfer, domains, onPurchase,
 }) => (
   <ul className={style.box}>
     <li className={isPrimary ? style.primary : style.secondary}>{packageType}</li>
@@ -18,7 +18,7 @@ const PriceBox = ({
     </li>
     <li><strong>{domains}</strong> Domains</li>
     {/* eslint-disable-next-line react/button-has-type */}
-    <li className={style.emphasized}><button>Sign Up</button></li>
+    <li className={style.emphasized}><button onClick={onPurchase}>Purchase</button></li>
   </ul>
 );
 
@@ -29,6 +29,7 @@ PriceBox.propTypes = {
   diskSpace: PropTypes.number.isRequired,
   dataTransfer: PropTypes.number.isRequired,
   domains: PropTypes.number.isRequired,
+  onPurchase: PropTypes.func.isRequired,
 };
 
 export default PriceBox;

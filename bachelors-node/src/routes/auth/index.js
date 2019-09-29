@@ -56,10 +56,8 @@ router.post('/login', validate(loginRequest), async (req, res) => {
     const userToken = encrypt(user);
 
     return res.status(200).send({
-      data: {
-        user,
-        token: userToken,
-      },
+      user,
+      token: userToken,
     });
   } catch (e) {
     logger.error(e);

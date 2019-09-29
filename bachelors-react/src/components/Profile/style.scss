@@ -2,28 +2,35 @@
   .profileList {
     list-style-type: none;
     margin: auto;
-    width: 35%;
+    width: 40%;
 
     li {
       display: flex;
       justify-content: space-between;
     }
+  }
 
-    .licenceLabel {
-      margin: auto;
-      margin-top: 15px;
-      text-align: center;
-    }
+  .licenceLabel {
+    width: 40%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    border: 1px solid black;
   }
 
   .licence {
-    width: 35%;
+    width: 40%;
     margin: auto;
+    text-align: center;
   }
 
   button {
     margin: auto;
     border: none;
+  }
+
+  button:hover {
+    cursor: pointer;
   }
 }
 

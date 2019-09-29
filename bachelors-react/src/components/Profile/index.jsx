@@ -13,10 +13,16 @@ class Profile extends Component {
 
     this.isLicenced = this.isLicenced.bind(this);
     this.onShowLicence = this.onShowLicence.bind(this);
+    this.onUnsubscribe = this.onUnsubscribe.bind(this);
   }
 
   onShowLicence() {
     this.setState({ licenceShowed: true });
+  }
+
+  onUnsubscribe() {
+    const { unsubscribeAction } = this.props;
+    unsubscribeAction();
   }
 
   isLicenced() {
@@ -57,18 +63,25 @@ class Profile extends Component {
             </li>
           )}
           {country && <li><span>Country: </span><span>{country}</span></li>}
-          <div className={style.licenceLabel}>{this.isLicenced()}</div>
         </ul>
+        <div className={style.licenceLabel}>{this.isLicenced()}</div>
         {licence && !licenceShowed && (
-          <button
-            type="button"
-            className={style.licence}
-            onClick={this.onShowLicence}
-          >
-            Show licence
-          </button>
+          <div className={style.licenceLabel}>
+            <button
+              type="button"
+              className={style.licence}
+              onClick={this.onShowLicence}
+            >
+              Show licence
+            </button>
+          </div>
         )}
         {licenceShowed && <div className={style.licence}>{licence}</div>}
+        {licence && (
+          <div className={style.licenceLabel}>
+            <button type="button" onClick={this.onUnsubscribe}>Unsubscribe</button>
+          </div>
+        )}
       </section>
     );
   }
@@ -76,6 +89,7 @@ class Profile extends Component {
 
 Profile.propTypes = {
   user: PropTypes.shape({}).isRequired,
+  unsubscribeAction: PropTypes.func.isRequired,
 };
 
 export default Profile;

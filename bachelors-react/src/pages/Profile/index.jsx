@@ -3,15 +3,17 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Profile from '../../components/Profile';
+import { unsubscribe } from '../../thunks/subscription';
 
-const ProfilePage = ({ user }) => (
+const ProfilePage = ({ user, unsubscribeAction }) => (
   <segment>
-    <Profile user={user} />
+    <Profile user={user} unsubscribeAction={unsubscribeAction} />
   </segment>
 );
 
 ProfilePage.propTypes = {
   user: PropTypes.shape({}).isRequired,
+  unsubscribeAction: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = ({ auth }) => ({
@@ -20,6 +22,7 @@ const mapStateToProps = ({ auth }) => ({
 
 const mapDispatchToProps = dispatch => bindActionCreators(
   {
+    unsubscribeAction: unsubscribe,
   },
   dispatch,
 );

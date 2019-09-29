@@ -19,10 +19,10 @@ export default handleActions(
     [LOGOUT_ACTION](state) {
       return state.merge(INITIAL_STATE);
     },
-    [LOGIN_ACTION](state, { payload: { data } }) {
+    [LOGIN_ACTION](state, { payload: { token, user } }) {
       return state.merge({
-        token: data.token,
-        user: data.user,
+        token,
+        user,
       });
     },
   },

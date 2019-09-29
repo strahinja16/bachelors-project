@@ -23,6 +23,10 @@
     font-size:18px;
   }
 
+  button:hover {
+    cursor: pointer;
+  }
+
   .emphasized {
     background-color: $emphasize-color;
   }

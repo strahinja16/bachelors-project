@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/label-has-for */
 import React from 'react';
 import { Col, Row } from 'react-flexbox-grid';
+import PropTypes from 'prop-types';
 import { PriceBox } from '../elements';
 import boxesData from './PriceBoxLayoutBoxes';
 import style from './styles.scss';
 
-const PriceBoxLayout = () => (
+const PriceBoxLayout = ({ onPurchase }) => (
   <section className={style.section}>
     <div className="">
       <Row center="xs">
@@ -23,6 +24,7 @@ const PriceBoxLayout = () => (
               domains={domains}
               diskSpace={diskSpace}
               dataTransfer={dataTransfer}
+              onPurchase={onPurchase}
             />
           </Col>
         ))}
@@ -30,5 +32,9 @@ const PriceBoxLayout = () => (
     </div>
   </section>
 );
+
+PriceBoxLayout.propTypes = {
+  onPurchase: PropTypes.func.isRequired,
+};
 
 export default PriceBoxLayout;

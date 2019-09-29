@@ -1,12 +1,16 @@
 const { Router } = require('express');
 const logger = require('services/logger');
+const emailService = require('services/email');
 const responses = require('services/responses');
 const { Order, Subscription } = require('models');
 const {
   findUserProductAndSubscriptionByFastSpringIds: findUserProductAndSubscription,
 } = require('repositories/user');
-
+const {
+  mail: { account: mailAccount },
+} = require('../../config');
 const router = Router();
+const PurchaseMail = require('../../resources/mails/purchaseMail');
 
 const errorResponse = res => res.status(500).send({ message: responses(500) });
 
@@ -41,6 +45,9 @@ router.post('/order-completed', async (req, res) => {
       { where: { id: user.subscription.id } },
     );
 
+    const subject = 'Successful purchase';
+    const mail = new PurchaseMail(mailAccount, 'strahinjadevmail2@gmail.com', subject, user);
+    await emailService.sendEmail(mail);
     return res.send();
   } catch (ex) {
     logger.error(ex);

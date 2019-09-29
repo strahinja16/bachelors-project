@@ -9,6 +9,7 @@ const middleware = require('middleware');
 const responses = require('services/responses');
 const { SubscriptionService, subscriptionService } = require('../../services/subscription');
 const { User, Subscription } = require('models');
+const { encrypt } = require('services/auth');
 
 const router = Router();
 
@@ -38,7 +39,21 @@ router.post('/subscribe', middleware('auth'), async (req, res) => {
       .getApiService()
       .createSession(accId, productName);
 
-    return res.send({ storefront: `${storefront}/session/${session.id}` });
+    const user = await User.findOne({
+      where: { id },
+      raw: true,
+    });
+
+    delete user.password;
+    const userToken = encrypt(user);
+
+    return res.send({
+      storefront: `https://${storefront}/session/${session.id}`,
+      auth: {
+        user,
+        token: userToken,
+      }
+    });
   } catch (ex) {
     logger.error(ex);
     return res.status(500).send({
@@ -73,7 +88,18 @@ router.post('/unsubscribe', middleware('auth'), async (req, res) => {
       },
     );
 
-    return res.send();
+    const user = await User.findOne({
+      where: { id },
+      raw: true,
+    });
+
+    delete user.password;
+    const userToken = encrypt(user);
+
+    return res.status(200).send({
+      user,
+      token: userToken,
+    });
   } catch (ex) {
     logger.error(ex);
     return res.status(500).send({
