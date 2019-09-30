@@ -7,8 +7,8 @@ const Showcase = () => (
     <div className={style.container}>
       <Row className={style.row} center="xs" middle="xs">
         <Col xs={10} sm={10} md={10} lg={7} className={style.showcaseContent}>
-          <h1>Welcome to <span className={style.primaryText}>AppName</span></h1>
-          <p>bachelors project</p>
+          <h1>Welcome to <span className={style.primaryText}>DomainManager</span></h1>
+          <p>Server management system</p>
         </Col>
       </Row>
     </div>

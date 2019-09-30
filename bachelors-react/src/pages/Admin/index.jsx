@@ -5,6 +5,7 @@ import { Loader } from 'semantic-ui-react';
 import { bindActionCreators } from 'redux';
 import UsersTable from '../../components/UsersTable';
 import { getUsers } from '../../thunks/admin';
+import style from './style.scss';
 
 class Admin extends Component {
   componentDidMount() {
@@ -21,7 +22,8 @@ class Admin extends Component {
     }
 
     return (
-      <section>
+      <section className={style.section}>
+        <div style={{ 'font-size': '25px' }}>Users</div>
         <UsersTable users={users} />
       </section>
     );

@@ -15,9 +15,6 @@ const NavItems = ({ isLoggedIn, isAdmin, activeItem }) => {
         <li className={activeItem === '/sign-up' ? style.current : ''}>
           <NavLink exact to="/sign-up">Sign up</NavLink>
         </li>
-        <li className={activeItem === '/help' ? style.current : ''}>
-          <NavLink exact to="/help">Help</NavLink>
-        </li>
       </Fragment>
     );
   }
@@ -34,9 +31,6 @@ const NavItems = ({ isLoggedIn, isAdmin, activeItem }) => {
       )}
       <li className={activeItem === '/logout' ? style.current : ''}>
         <NavLink exact to="/logout">Logout</NavLink>
-      </li>
-      <li className={activeItem === '/help' ? style.current : ''}>
-        <NavLink exact to="/help">Help</NavLink>
       </li>
     </Fragment>
   );
@@ -58,8 +52,8 @@ const Header = ({ activeItem, isAdmin, isLoggedIn }) => (
       <Row end="sm" center="xs" middle="lg">
         <Col className={style.col} xs={12} sm={1} md={1} lg={1}>
           <NavLink exact to="/">
-            <span className={style.logoPrimaryText}>App</span>
-            <span className={style.logo}>Name</span>
+            <span className={style.logoPrimaryText}>Domain</span>
+            <span className={style.logo}>Manager</span>
           </NavLink>
         </Col>
         <Col xs={12} sm={10} md={10} lg={10}>

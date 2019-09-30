@@ -19,7 +19,6 @@ const AdminRoutes = () => <Route path="/admin" exact component={dynamicImport(()
 const LoggedInList = ({ isAdmin }) => (
   <Switch>
     <Route path="/profile" exact component={dynamicImport(() => import('../pages/Profile'))} />
-    <Route exact path="/help" component={dynamicImport(() => import('../pages/Help'))} />
     <Route path="/logout" exact component={dynamicImport(() => import('../components/Logout'))} />
     <Route path="/" exact component={Dashboard} />
     {isAdmin && <AdminRoutes />}
@@ -48,7 +47,6 @@ const LoggedOutList = () => (
       path="/reset-password/:token"
       component={dynamicImport(() => import('../pages/ResetPassword'))}
     />
-    <Route exact path="/help" component={dynamicImport(() => import('../pages/Help'))} />
     <Route path="/" component={Dashboard} />
     <Redirect to="/login" />
   </Switch>
