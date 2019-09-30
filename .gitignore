@@ -10,3 +10,9 @@ bachelors-react/node_modules/*
 bachelors-react/.idea/*
 bachelors-react/.env
 bachelors-react/.DS_Store
+
+
+bachelors-subscriptiton/node_modules/*
+bachelors-subscriptiton/.idea/*
+bachelors-subscriptiton/.env
+bachelors-subscriptiton/.DS_Store
