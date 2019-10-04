@@ -39,8 +39,12 @@ class SubscriptionService {
 
       return id;
     } catch (e) {
-      throw new Error(`Fastspring account creation error. Message: ${e.message}`);
+      throw new Error(`Fastspring account creation error. Message: ${e.toString()}`);
     }
+  }
+
+  async cancelSubscription(subscription) {
+    return this.apiService.cancelSubscription(subscription);
   }
 }
 

@@ -5,23 +5,26 @@ module.exports = {
 	async subscribe({ params }) {
 		const { user, product } = params;
 
-		// const { data : { id } } = await subscriptionService.createAccount(user);
-		//
-		// const { data: session } = await subscriptionService
-		// 	.getApiService()
-		// 	.createSession(id, product);
+		let accId = user.fastspringAccountId;
 
-		console.log('radi');
+		if (!accId) {
+			accId = await subscriptionService.createAccount(user);
+		}
 
-		console.log({ user, product });
+		console.log({ accId });
+
+		const { data: session } = await subscriptionService
+			.getApiService()
+			.createSession(accId, product);
 
 		return {
-			prop: 'rpop',
+			accountId: accId,
+			storefront: `${fastspring.storefront}/session/${session.id}`,
 		};
+	},
 
-		// return {
-		// 	accountId: id,
-		// 	storefront: `https://${fastspring.storefront}/session/${session.id}`,
-		// };
+	async unsubscribe({ params }) {
+		const { subscription } = params;
+		await subscriptionService.cancelSubscription(subscription);
 	}
 };

@@ -43,6 +43,10 @@ class ApiService {
     return this.makeApiCall('/sessions', payload);
   }
 
+  async cancelSubscription(id) {
+    return this.makeApiCall(`/subscriptions/${id}`, {} ,'delete');
+  }
+
   async makeApiCall(url, payload, method = 'post') {
     return this.axios[method](url, payload);
   }

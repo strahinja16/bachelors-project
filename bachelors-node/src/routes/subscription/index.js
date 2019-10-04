@@ -1,48 +1,40 @@
 const { Router } = require('express');
-const {
-  fastspring: { storefront },
-} = require('config');
 const logger = require('services/logger');
 const middleware = require('middleware');
 const responses = require('services/responses');
 const { SubscriptionService, subscriptionService } = require('../../services/subscription');
 const { User, Subscription } = require('models');
 const { encrypt } = require('services/auth');
+const broker = require('services/broker');
 
 const router = Router();
 
 router.post('/subscribe', middleware('auth'), async (req, res) => {
   try {
-    const {
-      user: { id, licence },
-    } = req;
+    const { user } = req;
 
-    if (licence) {
+    if (user.licence) {
       return res.status(400).send({ message: 'There is already an active subscription.' });
     }
 
-    const accId = await subscriptionService.getUserAccount(id);
+    const product = SubscriptionService.getSubscriptionProduct();
+    const { accountId, storefront } = await broker.call('subscription.subscribe', { user, product });
 
-    await subscriptionService.createSubscription(id, accId);
+    await subscriptionService.createSubscription(user.id, accountId);
+    await User.update({ fastspringAccountId: accountId }, { where: { id: user.id } } );
 
-    const productName = SubscriptionService.getSubscriptionProduct();
-
-    const { data: session } = await subscriptionService
-      .getApiService()
-      .createSession(accId, productName);
-
-    const user = await User.findOne({
-      where: { id },
+    const userNew = await User.findOne({
+      where: { id: user.id },
       raw: true,
     });
 
-    delete user.password;
-    const userToken = encrypt(user);
+    delete userNew.password;
+    const userToken = encrypt(userNew);
 
     return res.send({
-      storefront: `${storefront}/session/${session.id}`,
+      storefront,
       auth: {
-        user,
+        user: userNew,
         token: userToken,
       }
     });
@@ -66,7 +58,7 @@ router.post('/unsubscribe', middleware('auth'), async (req, res) => {
       }
     });
 
-    await subscriptionService.cancelSubscription(subscription.name);
+    await broker.call('subscription.unsubscribe', { subscription: subscription.name });
 
     Subscription.destroy({ where: { userId: id } });
 
