@@ -1,0 +1,54 @@
+version: '3'
+
+services:
+  api:
+    build: ./bachelors-node
+    ports:
+      - "3000:3000"
+    command: npm start
+    volumes:
+      - ./bachelors-node:/app
+      - /app/node_modules
+    depends_on:
+      - postgres
+      - redis
+  postgres:
+    image: postgres
+    ports:
+      - "5000:5432"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=bachelors
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+  frontend:
+    build:
+      context: ./bachelors-react
+      args:
+        - NODE_ENV=development
+    ports:
+      - "1233:1233"
+      - "1234:1234"
+      - "3010:3001"
+      - "38771:38771"
+    command: npm start
+    volumes:
+      - ./bachelors-react:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - api
+  subscription:
+    build: ./bachelors-subscription
+    ports:
+    - "3001:3001"
+    command: npm start
+    volumes:
+    - ./bachelors-subscription:/app
+    - /app/node_modules
+    depends_on:
+    - redis

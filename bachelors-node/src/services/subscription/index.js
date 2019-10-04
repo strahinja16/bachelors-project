@@ -83,7 +83,6 @@ class SubscriptionService {
         Object.values(data.error).forEach(msg => errorMessage.concat(` ${msg}`));
         throw new Error(`Error canceling subscription. Message: ${errorMessage}`);
       }
-      console.log({ payload });
     } catch (e) {
       console.log(e);
       throw new Error(`Error canceling subscription. Message: ${e.message}`);
