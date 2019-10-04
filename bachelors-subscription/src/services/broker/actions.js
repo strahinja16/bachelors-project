@@ -2,16 +2,26 @@ const subscriptionService = require('../subscription');
 const { fastspring } = require('config');
 
 module.exports = {
-	async subscribe({ user, product }) {
-		const { data : { id } } = await subscriptionService.createAccount(user);
+	async subscribe({ params }) {
+		const { user, product } = params;
 
-		const { data: session } = await subscriptionService
-			.getApiService()
-			.createSession(id, product);
+		// const { data : { id } } = await subscriptionService.createAccount(user);
+		//
+		// const { data: session } = await subscriptionService
+		// 	.getApiService()
+		// 	.createSession(id, product);
+
+		console.log('radi');
+
+		console.log({ user, product });
 
 		return {
-			accountId: id,
-			storefront: `https://${fastspring.storefront}/session/${session.id}`,
+			prop: 'rpop',
 		};
+
+		// return {
+		// 	accountId: id,
+		// 	storefront: `https://${fastspring.storefront}/session/${session.id}`,
+		// };
 	}
 };

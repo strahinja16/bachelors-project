@@ -16,14 +16,7 @@ const sessionSchema = {
   product: Joi.string().required(),
 };
 
-const chargeSchema = {
-  ids: Joi.array()
-    .items(Joi.string())
-    .required(),
-};
-
 module.exports = {
   accountSchema,
   sessionSchema,
-  chargeSchema,
 };

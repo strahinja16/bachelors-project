@@ -66,7 +66,7 @@ router.post('/generate-licence', async (req, res) => {
 			return res.status(400).send('Bad request');
 		}
 
-		broker.emit("event.generateLicence");
+		broker.emit("event.generateLicence", { email: req.body.email });
 
 		return res.send('Please check your email for the details of purchase');
 	} catch (ex) {

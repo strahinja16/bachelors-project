@@ -2,18 +2,28 @@ const { ServiceBroker } = require('moleculer');
 const { redis } = require('config');
 const actions = require('./actions');
 
-const broker = new ServiceBroker({
-  nodeID: 'subscription',
-  logLevel: 'info',
-  transporter: {
-    type: 'Redis',
-    options: {
-      host: redis.host,
+const initBroker = () => {
+  const broker = new ServiceBroker({
+    nodeID: 'subscription',
+    logger: process.env.NODE_ENV === 'development',
+    logLevel: 'info',
+    transporter: {
+      type: 'Redis',
+      options: {
+        host: redis.host,
+      },
     },
-  },
-  actions,
-});
+  });
 
-// broker.start();
+  broker.createService({
+    name: 'subscription',
+    actions,
+  });
+
+  return broker;
+};
+
+const broker = initBroker();
+broker.start();
 
 module.exports = broker;

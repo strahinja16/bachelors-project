@@ -24,14 +24,7 @@ const sessionRequest = ({ account, product }) => ({
   ],
 });
 
-const chargeRequest = ({ ids }) => ({
-  subscriptions: ids.map(subscription => ({
-    subscription,
-  })),
-});
-
 module.exports = {
   userRequest,
   sessionRequest,
-  chargeRequest,
 };

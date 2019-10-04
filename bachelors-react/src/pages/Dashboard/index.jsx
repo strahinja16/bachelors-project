@@ -9,6 +9,7 @@ import Contact from '../../components/Contact';
 import Company from '../../components/Company';
 import PriceBoxLayout from '../../components/PriceBoxLayout';
 import { subscribe } from '../../thunks/subscription';
+import { logout } from '../../thunks/auth';
 
 class Dashboard extends PureComponent {
   constructor(props) {
@@ -18,7 +19,9 @@ class Dashboard extends PureComponent {
   }
 
   onPurchase() {
-    const { history: { push }, isLoggedIn, subscribeAction } = this.props;
+    const {
+      history: { push }, isLoggedIn, subscribeAction, logoutAction,
+    } = this.props;
     if (!isLoggedIn) {
       push('/login');
       return;
@@ -26,7 +29,8 @@ class Dashboard extends PureComponent {
 
     subscribeAction()
       .then((storefront) => {
-        window.open(storefront, '_blank');
+        logoutAction();
+        window.open(storefront, '_self');
       });
   }
 
@@ -49,6 +53,7 @@ Dashboard.propTypes = {
   }).isRequired,
   subscribeAction: PropTypes.func.isRequired,
   isLoggedIn: PropTypes.bool.isRequired,
+  logoutAction: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = ({ auth }) => ({
@@ -58,6 +63,7 @@ const mapStateToProps = ({ auth }) => ({
 const mapDispatchToProps = dispatch => bindActionCreators(
   {
     subscribeAction: subscribe,
+    logoutAction: logout,
   },
   dispatch,
 );

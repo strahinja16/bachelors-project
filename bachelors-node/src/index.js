@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const logger = require('services/logger');
 require('models');
+require('services/broker');
 
 const app = express();
 

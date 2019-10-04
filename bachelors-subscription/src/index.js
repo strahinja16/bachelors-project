@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const logger = require('services/logger');
+const broker = require('services/broker');
 
 const app = express();
 
@@ -19,6 +20,11 @@ if (process.env.NODE_ENV === 'development') {
   });
 }
 
+
+app.get('/', (req, res) => {
+  broker.emit('test', { prop: 'prop'});
+  res.send({ hi: 'hi'});
+});
 
 app.use('/webhooks', require('./webhooks'));
 

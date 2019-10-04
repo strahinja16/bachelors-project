@@ -1,5 +1,3 @@
-const uuid = require('uuid/v4');
-const moment = require('moment');
 const { Router } = require('express');
 const {
   fastspring: { storefront },
@@ -13,19 +11,13 @@ const { encrypt } = require('services/auth');
 
 const router = Router();
 
-const badRequest = res => res.status(400).send({ message: responses(400) });
-
 router.post('/subscribe', middleware('auth'), async (req, res) => {
   try {
     const {
-      user: { id },
+      user: { id, licence },
     } = req;
 
-    const subscription = await Subscription.findOne({
-      where: { userId: id },
-    });
-
-    if (subscription) {
+    if (licence) {
       return res.status(400).send({ message: 'There is already an active subscription.' });
     }
 
@@ -48,7 +40,7 @@ router.post('/subscribe', middleware('auth'), async (req, res) => {
     const userToken = encrypt(user);
 
     return res.send({
-      storefront: `https://${storefront}/session/${session.id}`,
+      storefront: `${storefront}/session/${session.id}`,
       auth: {
         user,
         token: userToken,
@@ -100,31 +92,6 @@ router.post('/unsubscribe', middleware('auth'), async (req, res) => {
       user,
       token: userToken,
     });
-  } catch (ex) {
-    logger.error(ex);
-    return res.status(500).send({
-      message: responses(500),
-    });
-  }
-});
-
-router.post('/generate-licence', async (req, res) => {
-  try {
-    const verified = subscriptionService.verifyLicenceRequestOrigin(req.body);
-
-    if (!verified) {
-      return badRequest(res);
-    }
-
-    const { email } = req.body;
-    const user = await User.findOne({ where: { email } });
-
-    await user.update({
-      licence: uuid(),
-      licenceExpirationDate: moment().add(1, 'weeks'),
-    });
-
-    return res.send('Please check your email for the details of purchase');
   } catch (ex) {
     logger.error(ex);
     return res.status(500).send({

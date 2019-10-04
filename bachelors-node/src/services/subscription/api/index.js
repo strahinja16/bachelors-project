@@ -2,11 +2,10 @@ const axios = require('axios');
 const {
   fastspring: { apiDomain, username, password },
 } = require('config');
-const { userRequest, sessionRequest, chargeRequest } = require('./requests');
+const { userRequest, sessionRequest } = require('./requests');
 const {
   validateCreateAccountPayload,
   validateCreateSessionPayload,
-  validateChargePayload,
 } = require('./requests/validation');
 
 class ApiService {
