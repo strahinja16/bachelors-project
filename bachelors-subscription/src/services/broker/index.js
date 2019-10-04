@@ -14,6 +14,6 @@ const broker = new ServiceBroker({
   actions,
 });
 
-broker.start();
+// broker.start();
 
 module.exports = broker;
