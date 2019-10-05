@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:12.11.0
 
 RUN mkdir -p /app/src
 RUN apt-get update
@@ -12,9 +12,9 @@ WORKDIR /app
 # install and cache app dependencies
 ADD package.json /app/package.json
 ADD package-lock.json /app/package-lock.json
+ADD . /app
 RUN npm ci --silent
 
 EXPOSE 1233
-EXPOSE 1234
 EXPOSE 38771
 CMD ["npm", "run", "start"]
