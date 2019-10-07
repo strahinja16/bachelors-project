@@ -30,4 +30,4 @@ spec:
     spec:
       containers:
         - name: bachelors-api
-          image: strahinja16/bachelors-api:1.0.0
+          image: strahinja16/bachelors-api:1.0.1
