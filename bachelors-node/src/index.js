@@ -23,6 +23,8 @@ if (process.env.NODE_ENV === 'development') {
 
 app.use('/api', require('./routes'));
 
+app.get('/', (req, res) => res.send({ hello: 'world'}));
+
 /**
  * Exports express
  * @public

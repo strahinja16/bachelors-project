@@ -21,10 +21,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 
-app.get('/', (req, res) => {
-  broker.emit('test', { prop: 'prop'});
-  res.send({ hi: 'hi'});
-});
+app.get('/', (req, res) => res.send({ hello: 'world'}));
 
 app.use('/webhooks', require('./webhooks'));
 

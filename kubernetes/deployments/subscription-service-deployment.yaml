@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: subscription
+  namespace: dev
+  labels:
+    app: bachelors-subscription
+spec:
+  type: NodePort
+  ports:
+    - port: 3001
+  selector:
+    app: bachelors-subscription
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: subscription
+  namespace: dev
+  labels:
+    app: bachelors-subscription
+spec:
+  selector:
+    matchLabels:
+      app: bachelors-subscription
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: bachelors-subscription
+    spec:
+      containers:
+        - name: bachelors-subscription
+          image: strahinja16/bachelors-subscription:1.0.2

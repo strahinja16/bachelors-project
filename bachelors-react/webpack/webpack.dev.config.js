@@ -13,6 +13,7 @@ module.exports = {
     port: 1233,
     hotOnly: true,
     host: '0.0.0.0',
+    disableHostCheck: true,
   },
 
   plugins: [

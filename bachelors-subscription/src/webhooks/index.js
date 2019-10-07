@@ -77,5 +77,7 @@ router.post('/generate-licence', async (req, res) => {
 	}
 });
 
+router.get('/test', (req, res) => res.send('sub success'));
+
 module.exports = router;
 
