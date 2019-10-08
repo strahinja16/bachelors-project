@@ -6,7 +6,7 @@ metadata:
   labels:
     app: bachelors-subscription
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
     - port: 3001
   selector:
@@ -32,4 +32,4 @@ spec:
     spec:
       containers:
         - name: bachelors-subscription
-          image: strahinja16/bachelors-subscription:1.0.3
+          image: strahinja16/bachelors-subscription:1.0.4

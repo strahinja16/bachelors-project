@@ -15,6 +15,4 @@ router.get('/', middleware('auth'), middleware('admin'), async (req, res) => {
 	return res.send({ users });
 });
 
-router.get('/test', (req, res) => res.send('sub success'));
-
 module.exports = router;

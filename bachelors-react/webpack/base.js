@@ -27,7 +27,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
-        API_URL: JSON.stringify(process.env.API_URL || 'http://hello-world.info/services/api'),
+        API_URL: JSON.stringify(process.env.API_URL || 'http://domain-manager.io/services/api'),
       },
     }),
 

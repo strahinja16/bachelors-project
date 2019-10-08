@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ngrok
+  namespace: dev
+spec:
+  selector:
+    matchLabels:
+      app: ngrok
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ngrok
+    spec:
+      containers:
+        - name: ngrok
+          image: wernight/ngrok
+          command: ["ngrok"]
+          args: ["http", "subscription:3001"]
+          ports:
+            - containerPort: 4040
