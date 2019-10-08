@@ -9,7 +9,6 @@ metadata:
     nginx.ingress.kubernetes.io/configuration-snippet: |
       rewrite /$1 break;
       rewrite ^/services/subscription/(.*)$ /$1 break;
-      rewrite ^/services/frontend/(.*)$ /$1 break;
       rewrite ^/services/api/(.*)$ /$1 break;
 spec:
   rules:
@@ -17,16 +16,12 @@ spec:
         paths:
           - path: /
             backend:
-              serviceName: web
-              servicePort: 8080
+              serviceName: frontend
+              servicePort: 1233
           - path: /services/subscription/
             backend:
               serviceName: subscription
               servicePort: 3001
-          - path: /services/frontend/
-            backend:
-              serviceName: frontend
-              servicePort: 1233
           - path: /services/api/
             backend:
               serviceName: api

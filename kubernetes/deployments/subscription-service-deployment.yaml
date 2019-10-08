@@ -32,4 +32,4 @@ spec:
     spec:
       containers:
         - name: bachelors-subscription
-          image: strahinja16/bachelors-subscription:1.0.2
+          image: strahinja16/bachelors-subscription:1.0.3
