@@ -15,10 +15,14 @@ class Dashboard extends PureComponent {
   constructor(props) {
     super(props);
 
+    this.state = {
+      error: null,
+    };
+
     this.onPurchase = this.onPurchase.bind(this);
   }
 
-  onPurchase() {
+  onPurchase(cost) {
     const {
       history: { push }, isLoggedIn, subscribeAction, logoutAction,
     } = this.props;
@@ -27,19 +31,30 @@ class Dashboard extends PureComponent {
       return;
     }
 
-    subscribeAction()
+    subscribeAction(cost)
       .then((storefront) => {
         logoutAction();
         window.open(storefront, '_self');
+      })
+      .catch((e) => {
+        const error = (e.response && e.response.data && e.response.data.message)
+          ? e.response.data.message
+          : 'Something went wrong';
+        this.setState({ error }, () => {
+          setTimeout(() => {
+            this.setState({ error: null });
+          }, 2000);
+        });
       });
   }
 
   render() {
+    const { error } = this.state;
     return (
       <section>
         <Showcase />
         <Features />
-        <PriceBoxLayout onPurchase={this.onPurchase} />
+        <PriceBoxLayout error={error} onPurchase={this.onPurchase} />
         <Contact />
         <Company />
       </section>

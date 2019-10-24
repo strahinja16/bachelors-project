@@ -1,6 +1,6 @@
 const md5 = require('blueimp-md5');
 const {
-  fastspring: { licenceKey },
+  fastspring: { personalLicenceKey, professionalLicenceKey, enterpriseLicenceKey },
 } = require('config');
 const pick = require('lodash/pick');
 const omit = require('lodash/omit');
@@ -17,11 +17,26 @@ class SubscriptionService {
 
   verifyLicenceRequestOrigin(body) {
     const payload = omit(body, ['security_request_hash']);
+    const licenceKey =  this.getLicenceKey(payload.price);
+
     const data = Object.values(payload)
       .join('')
       .concat('', licenceKey);
 
     return body.security_request_hash === md5(data);
+  }
+
+  getLicenceKey(cost) {
+    switch(cost) {
+      case '5.00':
+        return personalLicenceKey;
+      case '15.00':
+        return professionalLicenceKey;
+      case '50.00':
+        return enterpriseLicenceKey;
+      default:
+        return personalLicenceKey;
+    }
   }
 
   async createAccount(user) {
@@ -35,9 +50,10 @@ class SubscriptionService {
         'country'
       ]);
 
-      const { data : { id } } = await this.getApiService().createAccount(userPayload);
+      const payload = await this.getApiService().createAccount(userPayload);
 
-      return id;
+      console.log({ payload });
+      return payload.data.id;
     } catch (e) {
       throw new Error(`Fastspring account creation error. Message: ${e.toString()}`);
     }

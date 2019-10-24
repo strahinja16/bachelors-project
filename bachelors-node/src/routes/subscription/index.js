@@ -12,12 +12,13 @@ const router = Router();
 router.post('/subscribe', middleware('auth'), async (req, res) => {
   try {
     const { user } = req;
+    const { cost } = req.body;
 
     if (user.licence) {
       return res.status(400).send({ message: 'There is already an active subscription.' });
     }
 
-    const product = SubscriptionService.getSubscriptionProduct();
+    const product = SubscriptionService.getSubscriptionProduct(cost);
     const { accountId, storefront } = await broker.call('subscription.subscribe', { user, product });
 
     await subscriptionService.createSubscription(user.id, accountId);

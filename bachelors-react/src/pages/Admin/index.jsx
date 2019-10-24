@@ -23,7 +23,7 @@ class Admin extends Component {
 
     return (
       <section className={style.section}>
-        <div style={{ 'font-size': '25px' }}>Users</div>
+        <div style={{ fontSize: '25px' }}>Users</div>
         <UsersTable users={users} />
       </section>
     );

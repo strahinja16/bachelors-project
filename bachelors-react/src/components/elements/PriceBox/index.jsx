@@ -17,15 +17,17 @@ const PriceBox = ({
       <strong>{dataTransfer}GB</strong> Data Transfer
     </li>
     <li><strong>{domains}</strong> Domains</li>
-    {/* eslint-disable-next-line react/button-has-type */}
-    <li className={style.emphasized}><button onClick={onPurchase}>Purchase</button></li>
+    <li className={style.emphasized}>
+      {/* eslint-disable-next-line react/button-has-type */}
+      <button onClick={() => onPurchase(subscriptionFee)}>Purchase</button>
+    </li>
   </ul>
 );
 
 PriceBox.propTypes = {
   isPrimary: PropTypes.bool.isRequired,
   packageType: PropTypes.string.isRequired,
-  subscriptionFee: PropTypes.number.isRequired,
+  subscriptionFee: PropTypes.string.isRequired,
   diskSpace: PropTypes.number.isRequired,
   dataTransfer: PropTypes.number.isRequired,
   domains: PropTypes.number.isRequired,

@@ -8,7 +8,9 @@ const {
   FASTSPRING_USER,
   FASTSPRING_PASS,
   STOREFRONT_URL,
-  LICENCE_GENERATOR_KEY,
+  PERSONAL_LICENCE_KEY,
+  PROFESSIONAL_LICENCE_KEY,
+  ENTERPRISE_LICENCE_KEY,
 } = process.env;
 
 const port = PORT || 3001;
@@ -24,6 +26,8 @@ module.exports = {
     username: FASTSPRING_USER,
     password: FASTSPRING_PASS,
     storefront: STOREFRONT_URL,
-    licenceKey: LICENCE_GENERATOR_KEY,
+    personalLicenceKey: PERSONAL_LICENCE_KEY,
+    professionalLicenceKey: PROFESSIONAL_LICENCE_KEY,
+    enterpriseLicenceKey: ENTERPRISE_LICENCE_KEY,
   },
 };

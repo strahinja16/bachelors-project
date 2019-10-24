@@ -44,54 +44,65 @@ class Profile extends Component {
 
     return (
       <section className={style.profile}>
-        <Card className={style.card}>
-          <Image centered src="/src/images/profile.jpeg" />
-          <Card.Content className={`${style.cardContent} ${style.name}`}>
-            <Card.Header className={style.textCenter}>{firstName} {lastName}</Card.Header>
-            <Card.Description className={style.textCenter}>
-              {companyName}
-            </Card.Description>
-          </Card.Content>
-        </Card>
-        <Card className={style.card}>
-          <Card.Content className={style.cardContent}>
-            <Card.Header>Subscription information:</Card.Header>
-            <Card.Description>
-              <div>{this.isLicenced()}</div>
-            </Card.Description>
-          </Card.Content>
-          {licence && (
-          <Card.Content className={style.cardContent}>
-            <Card.Header>Options: </Card.Header>
-            <Card.Description>
-              {licence && !licenceShowed && (
+        <div>
+          <Card className={style.card}>
+            <Image centered src="/src/images/profile.jpeg" />
+            <div className={style.textCenter}>{firstName} {lastName}</div>
+            <div className={style.cardContent}>
+              <div className={style.cardHeader}>Company:</div>
               <div>
-                <Button
-                  className={style.unsub}
-                  primary
-                  onClick={this.onShowLicence}
-                >
-                    Show licence
-                </Button>
+                <div>{companyName}</div>
               </div>
-              )}
-              {licenceShowed && <div className={style.licence}>{licence}</div>}
-              {licence && (
-              <div>
-                <Button
-                  className={style.unsub}
-                  color="blue"
-                  secondary
-                  onClick={this.onUnsubscribe}
-                >
-                    Unsubscribe
-                </Button>
-              </div>
-              )}
-            </Card.Description>
-          </Card.Content>
-          )}
-        </Card>
+            </div>
+          </Card>
+          <Card className={style.card}>
+            <Card.Content>
+              <Card.Header>Subscription information: </Card.Header>
+              <Card.Description>
+                <div>
+                  <div>{this.isLicenced()}</div>
+                </div>
+              </Card.Description>
+            </Card.Content>
+            {licence && (
+              <Card.Content>
+                <Card.Header>Options: </Card.Header>
+                <Card.Description>
+                  {licence && !licenceShowed && (
+                    <div>
+                      <Button
+                        className={style.unsub}
+                        primary
+                        onClick={this.onShowLicence}
+                      >
+                        Show licence
+                      </Button>
+                    </div>
+                  )}
+                  {licenceShowed
+                  && (
+                  <div>
+                    <div className={style.licence}>Licence: </div>
+                    <div className={style.licence}>{licence}</div>
+                  </div>
+                  )}
+                  {licence && (
+                    <div>
+                      <Button
+                        className={style.unsub}
+                        color="blue"
+                        secondary
+                        onClick={this.onUnsubscribe}
+                      >
+                        Unsubscribe
+                      </Button>
+                    </div>
+                  )}
+                </Card.Description>
+              </Card.Content>
+            )}
+          </Card>
+        </div>
       </section>
     );
   }

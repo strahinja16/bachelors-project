@@ -1,7 +1,7 @@
 export default [
   {
     packageType: 'Personal',
-    subscriptionFee: 4.99,
+    subscriptionFee: '5.00',
     isPrimary: false,
     domains: 1,
     diskSpace: 10,
@@ -9,7 +9,7 @@ export default [
   },
   {
     packageType: 'Professional',
-    subscriptionFee: 14.99,
+    subscriptionFee: '15.00',
     isPrimary: true,
     domains: 5,
     diskSpace: 25,
@@ -17,7 +17,7 @@ export default [
   },
   {
     packageType: 'Enterprise',
-    subscriptionFee: 49.99,
+    subscriptionFee: '50.00',
     isPrimary: false,
     domains: 10,
     diskSpace: 90,

@@ -2,8 +2,8 @@
 import { loginUser } from '../reducers/auth';
 import { subscribe as subscribeApi, unsubscribe as unsubscribeApi } from '../api/subscription';
 
-export function subscribe() {
-  return dispatch => subscribeApi()
+export function subscribe(cost) {
+  return dispatch => subscribeApi(cost)
     .then(({ data: { storefront, auth } }) => {
       dispatch(loginUser(auth));
       localStorage.setItem('_token', auth.token);

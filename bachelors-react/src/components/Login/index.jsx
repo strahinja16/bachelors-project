@@ -42,8 +42,10 @@ class Login extends Component {
     loginAction({ email, password })
       .then(() => push(route))
       .catch((e) => {
-        const { data } = e.response;
-        this.setError(data.message);
+        const error = (e.response && e.response.data && e.response.data.message)
+          ? e.response.data.message
+          : 'Something went wrong';
+        this.setError(error);
         this.setState({ loading: false });
       });
   }

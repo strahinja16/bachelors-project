@@ -6,12 +6,13 @@ import { PriceBox } from '../elements';
 import boxesData from './PriceBoxLayoutBoxes';
 import style from './styles.scss';
 
-const PriceBoxLayout = ({ onPurchase }) => (
+const PriceBoxLayout = ({ onPurchase, error }) => (
   <section className={style.section}>
     <div className="">
       <Row center="xs">
         <h2>Pricing packages</h2>
       </Row>
+      {error && <div style={{ color: 'red', textAlign: 'center' }}>{error}</div>}
       <Row>
         {boxesData.map(({
           packageType, subscriptionFee, isPrimary, domains, diskSpace, dataTransfer,
@@ -33,8 +34,13 @@ const PriceBoxLayout = ({ onPurchase }) => (
   </section>
 );
 
+PriceBoxLayout.defaultProps = {
+  error: null,
+};
+
 PriceBoxLayout.propTypes = {
   onPurchase: PropTypes.func.isRequired,
+  error: PropTypes.string,
 };
 
 export default PriceBoxLayout;

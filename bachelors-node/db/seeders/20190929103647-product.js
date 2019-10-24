@@ -5,12 +5,21 @@ module.exports = {
   up: (queryInterface) => {
     const insertData = [];
 
-    insertData.push({
-      id: uuid(),
-      name: 'saasproduct1',
-      price: 1.00,
-      createdAt: new Date(),
-      updatedAt: new Date(),
+    const prices = [5.00, 10.00, 15.00];
+    const priceNames = [
+      'domainManagerPersonalLicence',
+      'domainManagerProfessionalLicence',
+      'domainManagerEnterpriseLicence'
+    ];
+
+    prices.forEach((price, index) => {
+      insertData.push({
+        id: uuid(),
+        name: priceNames[index],
+        price: prices[index],
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      });
     });
 
     return queryInterface.bulkInsert('products', insertData, {});

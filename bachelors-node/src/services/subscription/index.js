@@ -12,14 +12,24 @@ const PurchaseMail = require('../../resources/mails/purchaseMail');
 const emailService = require('services/email');
 const FailedMail = require('../../resources/mails/failedMail');
 
-
-const testProductName = 'saasproduct1';
+const testPersonalProduct = 'domainManagerPersonalLicence';
+const testProfessionalProduct = 'domainManagerProfessionalLicence';
+const testEnterpriseProduct = 'domainManagerEnterpriseLicence';
 const liveProductName = 'live-product';
 
 class SubscriptionService {
-  static getSubscriptionProduct() {
+  static getSubscriptionProduct(cost) {
     if (api.includes('localhost')) {
-      return testProductName;
+      switch(cost) {
+        case '5.00':
+            return testPersonalProduct;
+        case '15.00':
+          return testProfessionalProduct;
+        case '50.00':
+          return testEnterpriseProduct;
+        default:
+          return testPersonalProduct;
+      }
     }
 
     return liveProductName;
