@@ -32,4 +32,4 @@ spec:
     spec:
       containers:
         - name: bachelors-frontend
-          image: strahinja16/bachelors-react:1.0.7
+          image: strahinja16/bachelors-react:1.0.8

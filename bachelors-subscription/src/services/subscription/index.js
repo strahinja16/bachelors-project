@@ -51,8 +51,6 @@ class SubscriptionService {
       ]);
 
       const payload = await this.getApiService().createAccount(userPayload);
-
-      console.log({ payload });
       return payload.data.id;
     } catch (e) {
       throw new Error(`Fastspring account creation error. Message: ${e.toString()}`);

@@ -1,7 +1,6 @@
 const moment = require('moment');
 const uuid = require('uuid');
 const {
-  domains: { api },
   mail: { account: mailAccount },
 } = require('config');
 const { User, Subscription, Order } = require('models');
@@ -15,11 +14,9 @@ const FailedMail = require('../../resources/mails/failedMail');
 const testPersonalProduct = 'domainManagerPersonalLicence';
 const testProfessionalProduct = 'domainManagerProfessionalLicence';
 const testEnterpriseProduct = 'domainManagerEnterpriseLicence';
-const liveProductName = 'live-product';
 
 class SubscriptionService {
   static getSubscriptionProduct(cost) {
-    if (api.includes('localhost')) {
       switch(cost) {
         case '5.00':
             return testPersonalProduct;
@@ -29,10 +26,7 @@ class SubscriptionService {
           return testEnterpriseProduct;
         default:
           return testPersonalProduct;
-      }
     }
-
-    return liveProductName;
   }
 
   async createSubscription(userId, accountId) {
