@@ -3,3 +3,6 @@
 ### 
 - Node
 - React
+- Microservices
+- Docker
+- Kubernetes
