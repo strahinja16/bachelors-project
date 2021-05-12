@@ -54,7 +54,7 @@
     "module-alias": "^2.1.0",
     "moleculer": "^0.13.11",
     "moment": "^2.22.2",
-    "nodemailer": "^4.6.8",
+    "nodemailer": "^6.4.16",
     "nodemon": "^1.18.4",
     "pg": "^7.4.3",
     "pg-hstore": "^2.3.2",
