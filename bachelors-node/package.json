@@ -48,7 +48,7 @@
     "ioredis": "^4.14.1",
     "joi": "^13.4.0",
     "joi-extension-semver": "^2.0.0",
-    "jsonwebtoken": "^8.3.0",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.13",
     "mailgun-js": "^0.20.0",
     "module-alias": "^2.1.0",
